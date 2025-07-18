@@ -8,6 +8,7 @@
 }
 
 /* TODO: need to refactor */
-.contact-btn a {
+.btn {
+    @apply text-white py-3 px-6 rounded-3xl border-[#B36110] border-solid border-1 text-xl;
     background: linear-gradient(91.43deg, #E48930 3.08%, #B36110 99.01%);
 }
