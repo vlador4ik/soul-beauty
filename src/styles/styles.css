@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@theme {
+  --color-main: #FDEFE7;
+  --color-primary: #9A520B;
+  --color-black: #252424;
+  --color-white: #F4F4F4;
+  --font-display: "Montserrat", "sans-serif";
+}
+
+/* TODO: need to refactor */
+.contact-btn a {
+    background: linear-gradient(91.43deg, #E48930 3.08%, #B36110 99.01%);
+}
