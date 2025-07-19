@@ -13,13 +13,17 @@
   <body class="bg-main font-display">
     <div class="xl:container mx-auto px-4 mt-6">
       <header
-        class="py-7 px-8 bg-[#FBE0D233] border-[#F2A8A899] border-solid border-1 rounded-[44px] flex justify-between items-center"
+        class="lg:py-7 lg:px-8 bg-[#FBE0D233] border-[#F2A8A899] border-solid border-1 rounded-[44px] flex justify-between items-center md:py-4 md:px-5 py-4 px-2"
       >
-        <div class="logo">
+        <div class="logo lg:block md:block flex items-center gap-2">
+          <div class="burger w-8 flex flex-col gap-1 cursor-pointer items-center md:hidden lg:hidden">
+            <span class="w-4 h-0.5 bg-black"></span><span class="w-4 h-0.5 bg-black"></span><span class="w-4 h-0.5 bg-black"></span>
+          </div>
           <a href="#"><img src="/src/images/logo.png" alt="Logo" /></a>
         </div>
+        
         <nav>
-          <ul class="flex gap-10 text-black text-base font-medium">
+          <ul class="lg:gap-10 gap-5 text-black lg:text-base font-medium lg:flex md:flex hidden text-[14px]">
             <li><a href="#" class="hover:text-orange-400">O nás</a></li>
             <li><a href="#">Naše služby</a></li>
             <li><a href="#">Prečo si vybrať nás</a></li>
@@ -31,7 +35,7 @@
         </div>
       </header>
       <section>
-        <div class="flex justify-center px-[40px] pt-[25px] pb-10">
+        <div class="flex justify-center px-10 pt-[25px] pb-10">
           <div class="flex flex-col justify-center gap-4 w-2xl -mr-28 z-10">
             <h1 class="font-bold text-6xl">Soul Beauty Lounge</h1>
             <p class="font-medium text-3xl">
@@ -61,9 +65,9 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="my-24">
         <div
-          class="w-[65%] mx-auto py-15 px-20 bg-[#FBE0D233] border-[#F2A8A899] border-solid border-1 rounded-full my-24 flex flex-col justify-center items-center text-center"
+          class="w-[65%] mx-auto py-15 px-20 bg-[#FBE0D233] border-[#F2A8A899] border-solid border-1 rounded-full flex flex-col justify-center items-center text-center"
         >
           <p class="font-medium text-3xl max-w-[850px]">
             Šetrite čas, ušetrite energiu a užite si krásu a oddych pod jednou

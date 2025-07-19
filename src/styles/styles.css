@@ -9,6 +9,6 @@
 
 /* TODO: need to refactor */
 .btn {
-    @apply text-white py-3 px-6 rounded-3xl border-[#B36110] border-solid border-1 text-xl;
+    @apply text-white py-3 lg:px-6 px-3 rounded-3xl border-[#B36110] border-solid border-1 lg:text-xl text-base;
     background: linear-gradient(91.43deg, #E48930 3.08%, #B36110 99.01%);
 }
