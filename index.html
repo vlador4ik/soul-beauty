@@ -13,7 +13,8 @@
   <body class="bg-main font-display">
     <div class="xl:container mx-auto px-4 mt-6">
       <header
-        class="lg:py-7 lg:px-8 bg-secondary border-brown border-solid border-1 rounded-[44px] flex justify-between items-center md:py-4 md:px-5 py-4 px-2"
+        class="lg:py-7 lg:px-8 header bg-secondary border-brown border-solid border-1 rounded-[44px]
+            flex justify-between items-center md:py-4 md:px-5 py-4 px-2"
       >
         <div class="logo lg:block md:block flex items-center gap-2">
           <div
@@ -41,9 +42,9 @@
         </div>
       </header>
       <section>
-        <div class="flex justify-center px-10 pt-[25px] pb-10">
+        <div class="flex justify-between px-10 pt-[25px] pb-10">
           <div
-            class="flex flex-col justify-center gap-4 w-2xl lg:-mr-28 lg:z-10"
+            class="flex flex-col justify-center gap-4 w-2xl lg:-mr-28 lg:z-1"
           >
             <h1 class="text-4xl font-bold lg:text-6xl">Soul Beauty Lounge</h1>
             <p class="font-medium lg:text-3xl">
@@ -272,5 +273,13 @@
        </div>
       </section>
     </div>
+    <script>
+    const burger = document.querySelector('.burger'),
+    header = document.querySelector('.header');
+
+    burger.addEventListener('click', function() {
+        header.classList.toggle('menu-opened');
+    });
+    </script>
   </body>
 </html>
