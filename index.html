@@ -13,17 +13,10 @@
   <body class="bg-main font-display">
     <div class="xl:container mx-auto px-4 mt-6">
       <header
-        class="lg:py-7 lg:px-8 header bg-secondary border-brown border-solid border-1 rounded-[44px]
-            flex justify-between items-center md:py-4 md:px-5 py-4 px-2"
+        class="lg:py-7 lg:px-8 header bg-secondary border-brown border-solid border-1 rounded-3xl md:rounded-[44px]
+            flex justify-between items-center md:py-4 md:px-5 py-1 px-2"
       >
         <div class="logo lg:block md:block flex items-center gap-2">
-          <div
-            class="burger w-8 flex flex-col gap-1 cursor-pointer items-center md:hidden lg:hidden"
-          >
-            <span class="w-4 h-0.5 bg-black"></span
-            ><span class="w-4 h-0.5 bg-black"></span
-            ><span class="w-4 h-0.5 bg-black"></span>
-          </div>
           <a href="#"><img src="/src/images/logo.png" alt="Logo" /></a>
         </div>
 
@@ -37,12 +30,19 @@
             <li><a href="#">Darčekové poukážky</a></li>
           </ul>
         </nav>
-        <div class="contact-btn">
+        <div
+            class="burger w-10 h-10 flex flex-col gap-1 cursor-pointer items-center justify-center md:hidden lg:hidden"
+          >
+            <span class="w-4 h-0.5 bg-black"></span
+            ><span class="w-4 h-0.5 bg-black"></span
+            ><span class="w-4 h-0.5 bg-black"></span>
+          </div>
+        <div class="contact-btn hidden md:block">
           <a class="btn" href="#">Rezervácia</a>
         </div>
       </header>
       <section>
-        <div class="flex flex-col md:flex-row justify-between items-center px-10 pt-[25px] pb-7 md:pb-10">
+        <div class="flex flex-col md:flex-row justify-between items-center px-0 md:px-10 pt-[25px] pb-7 md:pb-10">
           <div
             class="flex flex-col justify-center gap-4 w-full lg:w-2xl lg:-mr-28 lg:z-1"
           >
@@ -56,11 +56,11 @@
               kaderníckych služieb až po rôzne typy epilácie. Pohodlne,
               profesionálne a s úsmevom. vašu krásu na jednom mieste.
             </p>
-            <div class="flex flex-col sm:flex-row items-center gap-4">
+            <div class="flex flex-row items-center gap-4">
               <a href="#" class="btn">Rezervácia online</a>
               <a
                 href="#"
-                class="text-[#8D4323] py-3 px-6 rounded-3xl border-[#8D4323] border-solid border-2 text-xl;"
+                class="text-[#8D4323] py-3 px-3 md:px-6 rounded-3xl border-[#8D4323] border-solid border-2 text-xl;"
                 ><b>Cenovka</b></a
               >
             </div>
@@ -76,9 +76,9 @@
       </section>
       <section class=" lg:my-24">
         <div
-          class="w-full mx-auto py-8 px-14 md:py-15 md:px-20 bg-secondary border-brown border-solid border-1 rounded-full flex flex-col justify-center items-center text-center"
+          class="w-full mx-auto py-7 px-7 md:py-15 md:px-20 bg-secondary border-brown border-solid border-1 rounded-[60px] md:rounded-full flex flex-col justify-center items-center text-center"
         >
-          <p class="font-medium text-xl lg:text-3xl max-w-[850px]">
+          <p class="font-medium text-base lg:text-3xl max-w-[850px]">
             Šetrite čas, ušetrite energiu a užite si krásu a oddych pod jednou
             strechou. Vitajte tam, kde sa starostlivosť stáva rituálom.
           </p>
@@ -87,7 +87,7 @@
       </section>
       <section>
         <div
-          class="flex flex-col lg:flex-row items-center gap-10 px-4 pt-6 lg:px-20 lg:pt-0"
+          class="flex flex-col lg:flex-row items-center gap-10 px-0 md:px-4 pt-6 lg:px-20 lg:pt-0"
         >
           <div>
             <img
@@ -130,7 +130,7 @@
         </div>
         <div>
           <div
-          class="w-full lg:w-[65%] mx-auto py-7 px-10 md:py-15 md:px-20 bg-secondary border-brown border-solid border-1 rounded-full text-center my-7 lg:my-24"
+          class="w-full lg:w-[65%] mx-auto py-7 px-10 md:py-10 md:px-15 lg:py-15 lg:px-20 bg-secondary border-brown border-solid border-1 rounded-[60px] md:rounded-full text-center my-7 lg:my-24"
         >
           <p class="font-medium text-lg lg:text-3xl max-w-[850px]">
             U nás šetríte čas, oddychujete a odchádzate krajšia, sebavedomejšia a pripravená na nový deň.
@@ -146,27 +146,27 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div class="flex flex-col items-center text-center">
             <img src="src/images/woman-services.png" alt="Image 1" class="w-full max-w-sm" />
-            <a href="#" class="mt-2 font-bold lg:text-3xl">Kozmetológia</a>
+            <a href="#" class="mt-2 font-bold text-xl lg:text-3xl">Kozmetológia</a>
           </div>
           <div class="flex flex-col items-center text-center">
             <img src="src/images/woman-services.png" alt="Image 1" class="w-full max-w-sm" />
-            <a href="#" class="mt-2 font-bold lg:text-3xl">Masáže</a>
+            <a href="#" class="mt-2 font-bold text-xl lg:text-3xl">Masáže</a>
           </div>
           <div class="flex flex-col items-center text-center">
             <img src="src/images/woman-services.png" alt="Image 1" class="w-full max-w-sm" />
-            <a href="#" class="mt-2 font-bold lg:text-3xl">Manikúra & Pedikúra</a>
+            <a href="#" class="mt-2 font-bold text-xl lg:text-3xl">Manikúra & Pedikúra</a>
           </div>
           <div class="flex flex-col items-center text-center">
             <img src="src/images/woman-services.png" alt="Image 1" class="w-full max-w-sm" />
-            <a href="#" class="mt-2 font-bold lg:text-3xl">Úprava obočia</a>
+            <a href="#" class="mt-2 font-bold text-xl lg:text-3xl">Úprava obočia</a>
           </div>
           <div class="flex flex-col items-center text-center">
             <img src="src/images/woman-services.png" alt="Image 1" class="w-full max-w-sm" />
-            <a href="#" class="mt-2 font-bold lg:text-3xl">Kadernícke služby</a>
+            <a href="#" class="mt-2 font-bold text-xl lg:text-3xl">Kadernícke služby</a>
           </div>
           <div class="flex flex-col items-center text-center">
             <img src="src/images/woman-services.png" alt="Image 1" class="w-full max-w-sm" />
-            <a href="#" class="mt-2 font-bold lg:text-3xl">Epilácia</a>
+            <a href="#" class="mt-2 font-bold text-xl lg:text-3xl">Epilácia</a>
           </div>
         </div>
       </section>
@@ -281,33 +281,33 @@
         <!-- Grid -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:max-w-7xl mx-auto">
           <div
-          class="w-full max-w-[410px] mx-auto p-16 bg-secondary border-brown border-solid border-1 rounded-full flex flex-col justify-center items-center text-center"
+          class="w-full max-w-[410px] mx-auto p-8 md:p-16 bg-secondary border-brown border-solid border-1 rounded-full flex flex-col justify-center items-center text-center"
         >
           <p class="font-semibold lg:text-xl lg:w-2xs">
             Všetko na jednom mieste — šetríte čas a energiu
           </p>
         </div>
-        <div class="w-full max-w-[410px] mx-auto p-16 bg-secondary border-brown border border-solid rounded-full flex flex-col justify-center items-center text-center">
+        <div class="w-full max-w-[410px] mx-auto p-8 md:p-16 bg-secondary border-brown border border-solid rounded-full flex flex-col justify-center items-center text-center">
           <p class="font-semibold lg:text-xl lg:w-2xs">
             Prémiová starostlivosť s top značkami
           </p>
         </div>
-        <div class="w-full max-w-[410px]  mx-auto p-16 bg-secondary border-brown border border-solid rounded-full flex flex-col justify-center items-center text-center">
+        <div class="w-full max-w-[410px] mx-auto p-8 md:p-16 bg-secondary border-brown border border-solid rounded-full flex flex-col justify-center items-center text-center">
           <p class="font-semibold lg:text-xl lg:w-2xs">
             Skúsený a priateľský tím odborníkov
           </p>
         </div>
-        <div class="w-full max-w-[410px]  mx-auto p-16 bg-secondary border-brown border border-solid rounded-full flex flex-col justify-center items-center text-center">
+        <div class="w-full max-w-[410px] mx-auto p-8 md:p-16 bg-secondary border-brown border border-solid rounded-full flex flex-col justify-center items-center text-center">
           <p class="font-semibold lg:text-xl lg:w-2xs">
             Oddychová atmosféra po náročnom dni
           </p>
         </div>
-        <div class="w-full max-w-[410px] mx-auto p-16 bg-secondary border-brown border border-solid rounded-full flex flex-col justify-center items-center text-center">
+        <div class="w-full max-w-[410px] mx-auto p-8 md:p-16 bg-secondary border-brown border border-solid rounded-full flex flex-col justify-center items-center text-center">
           <p class="font-semibold lg:text-xl lg:w-2xs">
             Diskrétnosť a individuálny prístup
           </p>
         </div>
-        <div class="w-full max-w-[410px] mx-auto p-16 bg-secondary border-brown border border-solid rounded-full flex flex-col justify-center items-center text-center">
+        <div class="w-full max-w-[410px] mx-auto p-8 md:p-16 bg-secondary border-brown border border-solid rounded-full flex flex-col justify-center items-center text-center">
           <p class="font-semibold lg:text-xl lg:w-2xs">
             Rýchla online rezervácia
           </p>
@@ -316,25 +316,25 @@
      </div>
        <!-- Darujte krásu a oddych -->
      <section class="w-full bg-gradient-to-r from-0% to-100% from-[#FDEFE7] to-[#9A520B] mt-6">
-         <div class="xl:container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-            <div class="flex flex-col justify-center items-center lg:w-4xl">
+         <div class="xl:container mx-auto px-4 md:py-2 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex flex-col justify-center items-center md:w-[80%] lg:w-4xl">
               <h3 class="text-3xl md:text-4xl font-bold text-center pt-5 lg:pt-0">Darujte krásu a oddych</h3>
               <p class="text-lg text-center mx-auto py-6">Potešte svojich blízkych darčekovou poukážkou na služby Soul Beauty Lounge. Krása a relax — darček, ktorý vždy poteší.</p>
               <a class="btn" href="#">Objednávka certifikátu</a>
             </div>
             <div>
-              <img src="src/images/woman-whith-card.png" alt="card" class="pt-2.5 md:pt-0 md:-mt-10 lg:-mt-15">
+              <img src="src/images/woman-whith-card.png" alt="card" class="pt-2.5 md:pt-0 md:-mb-2 lg:-mt-15">
             </div>
          </div>
      </section>
      <!-- Máte otázky? Napíšte nám -->
      <section class="bg-[#190202] border-b-2 border-solid border-[#8D432399]">
          <div class="xl:container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-            <div>
-              <img src="src/images/woman-form.png" alt="form" class="max-w-full h-auto relative lg: top-0.5 z-1">
+            <div class="hidden md:block">
+              <img src="src/images/woman-form.png" alt="form" class="max-w-full h-auto relative lg:top-0.5 z-1">
             </div>
             <!------------- form----------------->
-            <div class="w-full md:w-1/2 py-12 px-4 flex justify-center">
+            <div class="w-full md:w-1/2 py-12 md:px-4 flex justify-center">
               <form class="bg-main border border-[#F2A8A899] rounded-[40px] max-w-xl w-full p-8 shadow-md">
                 <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">
                   Máte otázky? Napíšte nám
@@ -431,6 +431,17 @@
             <a target="_blank" href="https://www.google.com/maps">Address Bratislava</a>
             <a target="_blank" href="tel:0910 22 55 55">0910 22 55 55</a>
             <a target="_blank" href="mailto:info@expertbeauty.sk">info@expertbeauty.sk</a>
+            <div class="flex items-center gap-4">
+                <a href="https://www.facebook.com/yourprofile" target="_blank">
+                    <img src="src/images/icons/facebook.svg" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/yourprofile" target="_blank">
+                    <img src="src/images/icons/instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://www.tiktok.com/yourprofile" target="_blank">
+                    <img src="src/images/icons/tiktok.svg" alt="TikTok">
+                </a>
+            </div>
           </div>
         </footer>
         <div class="flex justify-center mt-6">
