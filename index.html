@@ -330,11 +330,11 @@
          </div>
      </div>
      <!-- Máte otázky? Napíšte nám -->
-     <div  class="w-full bg-[#190202]">
+     <div  class="w-full bg-[#190202] border-b-2 border-solid border-[#8D432399]">
          <div class="xl:container mx-auto px-4">
           <section class="flex flex-col md:flex-row justify-between items-center">
             <div>
-              <img src="src/images/woman-form.png" alt="form" class="max-w-full h-auto">
+              <img src="src/images/woman-form.png" alt="form" class="max-w-full h-auto relative lg: top-0.5 z-1">
             </div>
             <!------------- form----------------->
             <div class="w-full md:w-1/2 py-12 px-4 flex justify-center">
@@ -397,12 +397,12 @@
     <!---------------- footer-------------- -->
     <div  class="w-full bg-[#190202] text-white">
       <div class="xl:container mx-auto px-4">
-        <footer class="flex justify-between pt-14">
-          <div>
+        <footer class="flex justify-between md:flex-wrap flex-col md:flex-row pt-5 md:pt-14">
+          <div class="flex justify-center items-center md:items-start">
             <img src="src/images/logo-footer.png" alt="logo">
           </div>
-          <div>
-            <h3 class="font-normal text-base mb-4">Pracovný plán</h3>
+          <div class="flex gap-2 flex-col">
+            <h3 class="md:font-normal font-bold text-base mb-2 md:mb-4">Pracovný plán</h3>
             <div class="grid grid-cols-2 gap-x-8 gap-y-2">
               <span>Pondelok</span> <span>9:00 – 21:00</span>
               <span>Utorok</span> <span>9:00 – 21:00</span>
@@ -412,16 +412,16 @@
               <span>Sobota/Nedeľa</span> <span>*dohodou</span>
             </div>
           </div>
-          <div class="flex flex-col gap-2">
-            <h3 class="font-normal text-base mb-4">Domov</h3>
+          <div class="flex flex-col gap-2 mt-4 md:mt-0">
+            <h3 class="md:font-normal font-bold text-base mb-2 md:mb-4">Domov</h3>
             <a href="#">O nás</a>
             <a href="#">Prečo si vybrať nás</a>
             <a href="#">Darčekové poukážky</a>
             <a href="#">Cenovka</a>
             <a href="#">Kontakt</a>
           </div>
-          <div class="flex flex-col gap-2">
-            <h3 class="font-normal text-base mb-4">Naše služby</h3>
+          <div class="flex flex-col gap-2 mt-4 md:mt-0">
+            <h3 class="md:font-normal font-bold text-base mb-2 md:mb-4">Naše služby</h3>
             <a href="#">Kozmetológia</a>
             <a href="#">Masáže</a>
             <a href="#">Manikúra & Pedikúra</a>
@@ -429,8 +429,8 @@
             <a href="#">Kadernícke služby</a>
             <a href="#">Epilácia</a>
           </div>
-          <div class="flex flex-col gap-2">
-            <h3 class="font-normal text-base mb-4">Sídlo</h3>
+          <div class="flex flex-col gap-2 mt-4 md:mt-0">
+            <h3 class="md:font-normal font-bold text-base mb-2 md:mb-4">Sídlo</h3>
             <a target="_blank" href="https://www.google.com/maps">Address Address Address</a>
             <a target="_blank" href="https://www.google.com/maps">Address Bratislava</a>
             <a target="_blank" href="tel:0910 22 55 55">0910 22 55 55</a>
@@ -439,8 +439,15 @@
             
             
           </div>
-
         </footer>
+        <div class="flex justify-center mt-6">
+            <div class="w-full h-0.5 from-0% to-100% bg-gradient-to-r from-[#8D432323] to-[#8D432366] rounded-4xl"></div>
+        </div>
+        <div class="p-6 pr-0">
+            <p class="md:text-right text-center text-base font-normal">
+                © Copyright - Soul Beauty Lounge <span class="current-year"></span>
+            </p>
+        </div>
       </div>
     </div>
     
@@ -454,6 +461,9 @@
         burger.addEventListener('click', function() {
             header.classList.toggle('menu-opened');
         });
+        // Update the current year in the footer
+        const currentYear = new Date().getFullYear();
+        document.querySelector('.current-year').textContent = currentYear;
     </script>
   </body>
 </html>
