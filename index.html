@@ -24,24 +24,119 @@
           <ul
             class="lg:gap-10 gap-5 text-black lg:text-base font-medium lg:flex md:flex hidden text-[14px]"
           >
-            <li><a href="#" class="hover:text-orange-400">O nás</a></li>
-            <li><a href="#services">Naše služby</a></li>
-            <li><a href="#about-us">Prečo si vybrať nás</a></li>
-            <li><a href="#card">Darčekové poukážky</a></li>
+            <li><a href="#about-us" class="hover:text-orange-400 transition-colors">O nás</a></li>
+            <li><a href="#services" class="hover:text-orange-400 transition-colors">Naše služby</a></li>
+            <li><a href="#why-choose-us" class="hover:text-orange-400 transition-colors">Prečo si vybrať nás</a></li>
+            <li><a href="#card" class="hover:text-orange-400 transition-colors">Darčekové poukážky</a></li>
           </ul>
         </nav>
-        <div
-            class="burger w-10 h-10 flex flex-col gap-1 cursor-pointer items-center justify-center md:hidden lg:hidden"
-          >
-            <span class="w-4 h-0.5 bg-black"></span
-            ><span class="w-4 h-0.5 bg-black"></span
-            ><span class="w-4 h-0.5 bg-black"></span>
-          </div>
+        <button
+          id="mobileMenuToggle"
+          class="burger w-10 h-10 flex flex-col gap-1 cursor-pointer items-center justify-center md:hidden lg:hidden relative z-50"
+          aria-label="Toggle mobile menu"
+        >
+          <span id="line1" class="w-5 h-0.5 bg-black transition-all duration-300 ease-in-out"></span>
+          <span id="line2" class="w-5 h-0.5 bg-black transition-all duration-300 ease-in-out"></span>
+          <span id="line3" class="w-5 h-0.5 bg-black transition-all duration-300 ease-in-out"></span>
+        </button>
+
         <div class="contact-btn hidden md:block">
           <a class="btn" href="#">Rezervácia</a>
         </div>
       </header>
-      <section>
+      <div id="mobileMenuOverlay" class="fixed inset-0 z-40 md:hidden transition-all duration-500 ease-in-out opacity-0 invisible">
+        <div 
+          id="mobileMenuBackdrop"
+          class="absolute inset-0 bg-main bg-opacity-0 transition-all duration-500"></div>
+
+        <div id="mobileMenuPanel" class="absolute top-0 right-0 h-full w-full bg-secondary shadow-2xl transform transition-transform duration-500 ease-in-out translate-x-full">
+
+          <div class="flex flex-col h-full pt-20 px-8">
+            <nav class="mb-6">
+              <ul class="space-y-8">
+                <li>
+                  <a
+                    href="#about-us"
+                    class="menu-link block text-xl font-medium text-black hover:text-amber-700 transition-all duration-300 transform hover:translate-x-1 translate-y-4 opacity-0"
+                  >
+                    O nás
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#services"
+                    class="menu-link block text-xl font-medium text-black hover:text-amber-700 transition-all duration-300 transform hover:translate-x-1 translate-y-4 opacity-0"
+                  >
+                    Naše služby
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#why-choose-us"
+                    class="menu-link block text-xl font-medium text-black hover:text-amber-700 transition-all duration-300 transform hover:translate-x-1 translate-y-4 opacity-0"
+                  >
+                    Prečo si vybrať nás
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#card"
+                    class="menu-link block text-xl font-medium text-black hover:text-amber-700 transition-all duration-300 transform hover:translate-x-1 translate-y-4 opacity-0"
+                  >
+                    Darčekové poukážky
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    class="menu-link block text-xl font-medium text-black hover:text-amber-700 transition-all duration-300 transform hover:translate-x-1 translate-y-4 opacity-0"
+                  >
+                    Kontakt
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div id="menuButtons" class="space-y-4 transition-all duration-500 translate-y-8 opacity-0">
+              <a href="#" class="btn w-full block text-center">
+                Rezervácia
+              </a>
+              <a href="#" class="w-full block text-[#8D4323] py-3 px-3 md:px-6 rounded-3xl border-[#8D4323] border-solid border-2 text-xl text-center">
+                Cenník
+              </a>
+            </div>
+
+            <div class="flex justify-center my-6">
+                <div class="w-full h-0.5 from-0% to-100% bg-gradient-to-l from-[#8D432323] to-[#8D432366] rounded-4xl"></div>
+            </div>
+            <div id="menuFooter" class="pb-8 transition-all duration-500 translate-y-8 opacity-0">
+              <!-- Logo -->
+              <div class="flex justify-center mb-4">
+                <a href="#"><img src="/src/images/logo_mobile.png" alt="Logo" /></a>
+              </div>
+
+              <!-- Social Media Icons -->
+                <div class="flex items-center justify-center gap-4">
+                    <a href="https://www.facebook.com/yourprofile" target="_blank">
+                        <svg width="24" height="25" viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#252424" d="M13.001 20.2867C16.9473 19.7946 20.001 16.4282 20.001 12.3486C20.001 7.93035 16.4193 4.34863 12.001 4.34863C7.5827 4.34863 4.00098 7.93035 4.00098 12.3486C4.00098 16.4282 7.05467 19.7946 11.001 20.2867V14.3486H9.00098V12.3486H11.001V10.6944C11.001 9.35718 11.1402 8.87225 11.4017 8.38336C11.6631 7.89447 12.0468 7.51079 12.5357 7.24933C12.9184 7.04467 13.3931 6.92115 14.2227 6.86817C14.5519 6.84714 14.9781 6.87396 15.501 6.94863V8.84863H15.001C14.0837 8.84863 13.7052 8.89195 13.4789 9.01296C13.3386 9.08802 13.2404 9.18621 13.1653 9.32656C13.0443 9.55281 13.001 9.77716 13.001 10.6944V12.3486H15.501L15.001 14.3486H13.001V20.2867ZM12.001 22.3486C6.47813 22.3486 2.00098 17.8714 2.00098 12.3486C2.00098 6.82578 6.47813 2.34863 12.001 2.34863C17.5238 2.34863 22.001 6.82578 22.001 12.3486C22.001 17.8714 17.5238 22.3486 12.001 22.3486Z" fill="#FDEFE7"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/yourprofile" target="_blank">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#252424" d="M12.001 9.34863C10.3436 9.34863 9.00098 10.6917 9.00098 12.3486C9.00098 14.0059 10.3441 15.3486 12.001 15.3486C13.6583 15.3486 15.001 14.0055 15.001 12.3486C15.001 10.6913 13.6579 9.34863 12.001 9.34863ZM12.001 7.34863C14.7614 7.34863 17.001 9.58573 17.001 12.3486C17.001 15.1091 14.7639 17.3486 12.001 17.3486C9.24051 17.3486 7.00098 15.1115 7.00098 12.3486C7.00098 9.58816 9.23808 7.34863 12.001 7.34863ZM18.501 7.09778C18.501 7.78789 17.9402 8.3478 17.251 8.3478C16.5609 8.3478 16.001 7.78703 16.001 7.09778C16.001 6.40853 16.5617 5.84863 17.251 5.84863C17.9393 5.84776 18.501 6.40853 18.501 7.09778ZM12.001 4.34863C9.5265 4.34863 9.12318 4.35518 7.97227 4.40643C7.18815 4.44324 6.66253 4.5487 6.17416 4.7383C5.74016 4.90662 5.42709 5.10761 5.09352 5.44118C4.75867 5.77603 4.55804 6.08826 4.3904 6.52246C4.20036 7.01195 4.09493 7.53674 4.05878 8.31978C4.00703 9.42383 4.00098 9.80968 4.00098 12.3486C4.00098 14.8231 4.00753 15.2264 4.05877 16.3772C4.0956 17.161 4.2012 17.6874 4.39034 18.1746C4.5591 18.6092 4.7605 18.923 5.09246 19.255C5.42863 19.5907 5.74179 19.792 6.17187 19.958C6.66619 20.1491 7.19148 20.2547 7.97212 20.2908C9.07618 20.3425 9.46203 20.3486 12.001 20.3486C14.4755 20.3486 14.8788 20.342 16.0296 20.2908C16.8117 20.2541 17.3385 20.1482 17.827 19.9592C18.2604 19.7909 18.5752 19.5888 18.9074 19.2571C19.2436 18.9204 19.4445 18.608 19.6107 18.1769C19.8013 17.6844 19.9071 17.1584 19.9432 16.3775C19.9949 15.2734 20.001 14.8875 20.001 12.3486C20.001 9.87415 19.9944 9.47084 19.9432 8.32C19.9064 7.53769 19.8005 7.01012 19.6113 6.52181C19.4434 6.08901 19.2417 5.77498 18.9084 5.44118C18.573 5.10578 18.2616 4.90556 17.8271 4.73805C17.338 4.54817 16.8124 4.44259 16.0298 4.40644C14.9258 4.35468 14.5399 4.34863 12.001 4.34863ZM12.001 2.34863C14.7176 2.34863 15.0568 2.35863 16.1235 2.40863C17.1876 2.4578 17.9135 2.62613 18.551 2.87363C19.2101 3.1278 19.7668 3.47113 20.3226 4.02696C20.8776 4.5828 21.221 5.14113 21.476 5.79863C21.7226 6.4353 21.891 7.16196 21.941 8.22613C21.9885 9.2928 22.001 9.63196 22.001 12.3486C22.001 15.0653 21.991 15.4044 21.941 16.4711C21.8918 17.5353 21.7226 18.2611 21.476 18.8986C21.2218 19.5578 20.8776 20.1144 20.3226 20.6703C19.7668 21.2253 19.2076 21.5686 18.551 21.8236C17.9135 22.0703 17.1876 22.2386 16.1235 22.2886C15.0568 22.3361 14.7176 22.3486 12.001 22.3486C9.28431 22.3486 8.94514 22.3386 7.87848 22.2886C6.81431 22.2394 6.08931 22.0703 5.45098 21.8236C4.79264 21.5694 4.23514 21.2253 3.67931 20.6703C3.12348 20.1144 2.78098 19.5553 2.52598 18.8986C2.27848 18.2611 2.11098 17.5353 2.06098 16.4711C2.01348 15.4044 2.00098 15.0653 2.00098 12.3486C2.00098 9.63196 2.01098 9.2928 2.06098 8.22613C2.11014 7.16113 2.27848 6.43613 2.52598 5.79863C2.78014 5.1403 3.12348 4.5828 3.67931 4.02696C4.23514 3.47113 4.79348 3.12863 5.45098 2.87363C6.08848 2.62613 6.81348 2.45863 7.87848 2.40863C8.94514 2.36113 9.28431 2.34863 12.001 2.34863Z" fill="#FDEFE7"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.tiktok.com/yourprofile" target="_blank">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#252424" d="M16 8.594V15.8486C16 19.4385 13.0899 22.3486 9.5 22.3486C5.91015 22.3486 3 19.4385 3 15.8486C3 12.2587 5.91015 9.34863 9.5 9.34863C10.0163 9.34863 10.5185 9.40882 11 9.52256V12.6854C10.5454 12.4694 10.0368 12.3486 9.5 12.3486C7.567 12.3486 6 13.9156 6 15.8486C6 17.7816 7.567 19.3486 9.5 19.3486C11.433 19.3486 13 17.7816 13 15.8486V2.34863H16C16 5.11005 18.2386 7.34863 21 7.34863V10.3486C19.1081 10.3486 17.3696 9.69191 16 8.594Z" fill="#FDEFE7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section id="about-us">
         <div class="flex flex-col md:flex-row justify-between items-center px-0 md:px-10 pt-[25px] pb-7 md:pb-10">
           <div
             class="flex flex-col justify-center gap-4 w-full lg:w-2xl lg:-mr-28 lg:z-1"
@@ -60,7 +155,7 @@
               <a href="#" class="btn">Rezervácia online</a>
               <a
                 href="#"
-                class="text-[#8D4323] py-3 px-3 md:px-6 rounded-3xl border-[#8D4323] border-solid border-2 text-xl;"
+                class="text-[#8D4323] py-3 px-3 md:px-6 rounded-3xl border-[#8D4323] border-solid border-2 text-xl"
                 ><b>Cenovka</b></a
               >
             </div>
@@ -287,7 +382,7 @@
       </section>
       
       <!-------------- Prečo si vybrať nás --------------->
-      <section id="about-us" class="mt-6 lg:mt-24 md:pb-8 lg:pb-16">
+      <section id="why-choose-us" class="mt-6 lg:mt-24 md:pb-8 lg:pb-16">
         <div class="text-center">
           <h3 class="text-3xl xl:text-5xl font-bold text-center">Prečo si vybrať nás</h3>
           <p class="text-lg max-w-[675px] mx-auto pb-6 md:pb-14 pt-6">Čistenie pleti, hydratácia, mezoterapia, biorevitalizácia — zdravá, žiarivá pleť v rukách odborníkov a top značiek Dermaheal, DMK, Medik8.</p>
@@ -342,7 +437,7 @@
          </div>
      </section>
      <!-- Máte otázky? Napíšte nám -->
-     <section class="bg-[#190202] border-b-2 border-solid border-[#8D432399]">
+     <section id="contact" class="bg-[#190202] border-b-2 border-solid border-[#8D432399]">
          <div class="xl:container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
             <div class="hidden md:block">
               <img loading=«lazy» src="src/images/woman-form.png" alt="form" class="max-w-full h-auto relative lg:top-0.5 z-1">
@@ -424,11 +519,11 @@
           </div>
           <div class="flex flex-col gap-2 mt-4 md:mt-0">
             <h3 class="md:font-normal font-bold text-base mb-2 md:mb-4">Domov</h3>
-            <a href="#">O nás</a>
-            <a href="#about-us">Prečo si vybrať nás</a>
+            <a href="#about-us">O nás</a>
+            <a href="#why-choose-us">Prečo si vybrať nás</a>
             <a href="#card">Darčekové poukážky</a>
             <a href="#">Cenovka</a>
-            <a target="_blank" href="tel:0910 22 55 55">Kontakt</a>
+            <a href="#contact">Kontakt</a>
           </div>
           <div class="flex flex-col gap-2 mt-4 md:mt-0">
             <h3 class="md:font-normal font-bold text-base mb-2 md:mb-4">Naše služby</h3>
@@ -442,9 +537,8 @@
           <div class="flex flex-col gap-2 mt-4 md:mt-0">
             <h3 class="md:font-normal font-bold text-base mb-2 md:mb-4">Sídlo</h3>
             <a target="_blank" href="https://www.google.com/maps">Address Address Address</a>
-            <a target="_blank" href="https://www.google.com/maps">Address Bratislava</a>
-            <a target="_blank" href="tel:0910 22 55 55">0910 22 55 55</a>
-            <a target="_blank" href="mailto:info@expertbeauty.sk">info@expertbeauty.sk</a>
+            <a href="tel:0910 22 55 55">0910 22 55 55</a>
+            <a href="mailto:info@expertbeauty.sk">info@expertbeauty.sk</a>
             <div class="flex items-center gap-4">
                 <a href="https://www.facebook.com/yourprofile" target="_blank">
                     <img src="src/images/icons/facebook.svg" alt="Facebook">
@@ -468,17 +562,135 @@
         </div>
       </div>
     </div>
+    <div id="scrollToTop" class="fixed bottom-6 right-4 z-50 bg-gradient-to-r from-0% to-100% from-[#E48930] to-[#B36110] rounded-full p-2 cursor-pointer hidden">
+       <svg enable-background="new 0 0 32 32" id="Layer_1" version="1.1" viewBox="0 0 32 32" width="20px" height="20px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path d="M18.221,7.206l9.585,9.585c0.879,0.879,0.879,2.317,0,3.195l-0.8,0.801c-0.877,0.878-2.316,0.878-3.194,0
+                l-7.315-7.315l-7.315,7.315c-0.878,0.878-2.317,0.878-3.194,0l-0.8-0.801c-0.879-0.878-0.879-2.316,0-3.195l9.587-9.585 
+                c0.471-0.472,1.103-0.682,1.723-0.647C17.115,6.524,17.748,6.734,18.221,7.206z" fill="#fff"
+            />
+        </svg>
+    </div>
     
-    
-    
-    
-    <script>
-        const burger = document.querySelector('.burger'),
-        header = document.querySelector('.header');
-
-        burger.addEventListener('click', function() {
-            header.classList.toggle('menu-opened');
+   <script>
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+        const mobileMenuPanel = document.getElementById('mobileMenuPanel');
+        const mobileMenuBackdrop = document.getElementById('mobileMenuBackdrop');
+        const menuLinks = document.querySelectorAll('.menu-link');
+        const menuButtons = document.getElementById('menuButtons');
+        const menuFooter = document.getElementById('menuFooter');
+        const scrollToTopButton = document.getElementById('scrollToTop');
+        const scrollToTop = () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+        scrollToTopButton.addEventListener('click', scrollToTop);
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                scrollToTopButton.classList.remove('hidden');
+            } else {
+                scrollToTopButton.classList.add('hidden');
+            }
         });
+        
+        const line1 = document.getElementById('line1');
+        const line2 = document.getElementById('line2');
+        const line3 = document.getElementById('line3');
+        
+        let isMenuOpen = false;
+
+        function openMobileMenu() {
+            isMenuOpen = true;
+            
+            document.body.style.overflow = 'hidden';
+            
+            mobileMenuOverlay.classList.remove('opacity-0', 'invisible');
+            mobileMenuOverlay.classList.add('opacity-100', 'visible');
+            
+            mobileMenuBackdrop.classList.remove('bg-opacity-0');
+            mobileMenuBackdrop.classList.add('bg-opacity-50', 'backdrop-blur-sm');
+            
+            mobileMenuPanel.classList.remove('translate-x-full');
+            mobileMenuPanel.classList.add('translate-x-0');
+            
+            line1.classList.add('rotate-45', 'translate-y-1.5');
+            line2.classList.add('opacity-0');
+            line3.classList.add('-rotate-45', '-translate-y-1.5');
+            
+            setTimeout(() => {
+                menuLinks.forEach((link, index) => {
+                    setTimeout(() => {
+                        link.classList.remove('translate-y-4', 'opacity-0');
+                        link.classList.add('translate-y-0', 'opacity-100');
+                    }, index * 100);
+                });
+                
+                setTimeout(() => {
+                    menuButtons.classList.remove('translate-y-8', 'opacity-0');
+                    menuButtons.classList.add('translate-y-0', 'opacity-100');
+                }, 600);
+                
+                setTimeout(() => {
+                    menuFooter.classList.remove('translate-y-8', 'opacity-0');
+                    menuFooter.classList.add('translate-y-0', 'opacity-100');
+                }, 700);
+            }, 100);
+        }
+
+        function closeMobileMenu() {
+            isMenuOpen = false;
+            
+            document.body.style.overflow = 'unset';
+            
+            mobileMenuOverlay.classList.remove('opacity-100', 'visible');
+            mobileMenuOverlay.classList.add('opacity-0', 'invisible');
+            
+            mobileMenuBackdrop.classList.remove('bg-opacity-50', 'backdrop-blur-sm');
+            mobileMenuBackdrop.classList.add('bg-opacity-0');
+            
+            mobileMenuPanel.classList.remove('translate-x-0');
+            mobileMenuPanel.classList.add('translate-x-full');
+            
+            line1.classList.remove('rotate-45', 'translate-y-1.5');
+            line2.classList.remove('opacity-0');
+            line3.classList.remove('-rotate-45', '-translate-y-1.5');
+            
+            menuLinks.forEach(link => {
+                link.classList.remove('translate-y-0', 'opacity-100');
+                link.classList.add('translate-y-4', 'opacity-0');
+            });
+            
+            menuButtons.classList.remove('translate-y-0', 'opacity-100');
+            menuButtons.classList.add('translate-y-8', 'opacity-0');
+            
+            menuFooter.classList.remove('translate-y-0', 'opacity-100');
+            menuFooter.classList.add('translate-y-8', 'opacity-0');
+        }
+
+        mobileMenuToggle.addEventListener('click', () => {
+            if (isMenuOpen) {
+                closeMobileMenu();
+            } else {
+                openMobileMenu();
+            }
+        });
+        mobileMenuBackdrop.addEventListener('click', closeMobileMenu);
+
+        menuLinks.forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            if(anchor) {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            }
+        });
+
         // Update the current year in the footer
         const currentYear = new Date().getFullYear();
         document.querySelector('.current-year').textContent = currentYear;
