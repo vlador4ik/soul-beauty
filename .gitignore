@@ -20,7 +20,7 @@ Thumbs.db
 .env.*.local
 
 # Build output
-dist/
+# dist/
 build/
 tmp/
 temp/

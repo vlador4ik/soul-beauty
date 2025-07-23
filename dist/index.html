@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Soul Beauty</title>
+    <link rel="stylesheet" crossorigin href="/assets/index-0-iCMMiX.css">
+  </head>
+  <body class="bg-main font-display">
+    <div class="xl:container mx-auto px-4 mt-6">
+      <header
+        class="lg:py-7 lg:px-8 header bg-secondary border-brown border-solid border-1 rounded-3xl md:rounded-[44px]
+            flex justify-between items-center md:py-4 md:px-5 py-1 px-2"
+      >
+        <div class="logo lg:block md:block flex items-center gap-2">
+          <a href="#"><img src="data:image/png;base64,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" alt="Logo" /></a>
+        </div>
+
+        <nav>
+          <ul
+            class="lg:gap-10 gap-5 text-black lg:text-base font-medium lg:flex md:flex hidden text-[14px]"
+          >
+            <li><a href="#about-us" class="hover:text-orange-400 transition-colors">O nás</a></li>
+            <li><a href="#services" class="hover:text-orange-400 transition-colors">Naše služby</a></li>
+            <li><a href="#why-choose-us" class="hover:text-orange-400 transition-colors">Prečo si vybrať nás</a></li>
+            <li><a href="#card" class="hover:text-orange-400 transition-colors">Darčekové poukážky</a></li>
+          </ul>
+        </nav>
+        <button
+          id="mobileMenuToggle"
+          class="burger w-10 h-10 flex flex-col gap-1 cursor-pointer items-center justify-center md:hidden lg:hidden relative z-50"
+          aria-label="Toggle mobile menu"
+        >
+          <span id="line1" class="w-5 h-0.5 bg-black transition-all duration-300 ease-in-out"></span>
+          <span id="line2" class="w-5 h-0.5 bg-black transition-all duration-300 ease-in-out"></span>
+          <span id="line3" class="w-5 h-0.5 bg-black transition-all duration-300 ease-in-out"></span>
+        </button>
+
+        <div class="contact-btn hidden md:block">
+          <a class="btn" href="#">Rezervácia</a>
+        </div>
+      </header>
+      <div id="mobileMenuOverlay" class="fixed inset-0 z-40 md:hidden transition-all duration-500 ease-in-out opacity-0 invisible">
+        <div 
+          id="mobileMenuBackdrop"
+          class="absolute inset-0 bg-main bg-opacity-0 transition-all duration-500"></div>
+
+        <div id="mobileMenuPanel" class="absolute top-0 right-0 h-full w-full bg-secondary shadow-2xl transform transition-transform duration-500 ease-in-out translate-x-full">
+
+          <div class="flex flex-col h-full pt-20 px-8">
+            <nav class="mb-6">
+              <ul class="space-y-8">
+                <li>
+                  <a
+                    href="#about-us"
+                    class="menu-link block text-xl font-medium text-black hover:text-amber-700 transition-all duration-300 transform hover:translate-x-1 translate-y-4 opacity-0"
+                  >
+                    O nás
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#services"
+                    class="menu-link block text-xl font-medium text-black hover:text-amber-700 transition-all duration-300 transform hover:translate-x-1 translate-y-4 opacity-0"
+                  >
+                    Naše služby
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#why-choose-us"
+                    class="menu-link block text-xl font-medium text-black hover:text-amber-700 transition-all duration-300 transform hover:translate-x-1 translate-y-4 opacity-0"
+                  >
+                    Prečo si vybrať nás
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#card"
+                    class="menu-link block text-xl font-medium text-black hover:text-amber-700 transition-all duration-300 transform hover:translate-x-1 translate-y-4 opacity-0"
+                  >
+                    Darčekové poukážky
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    class="menu-link block text-xl font-medium text-black hover:text-amber-700 transition-all duration-300 transform hover:translate-x-1 translate-y-4 opacity-0"
+                  >
+                    Kontakt
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div id="menuButtons" class="space-y-4 transition-all duration-500 translate-y-8 opacity-0">
+              <a href="#" class="btn w-full block text-center">
+                Rezervácia
+              </a>
+              <a href="#" class="w-full block text-[#8D4323] py-3 px-3 md:px-6 rounded-3xl border-[#8D4323] border-solid border-2 text-xl text-center">
+                Cenník
+              </a>
+            </div>
+
+            <div class="flex justify-center my-6">
+                <div class="w-full h-0.5 from-0% to-100% bg-gradient-to-l from-[#8D432323] to-[#8D432366] rounded-4xl"></div>
+            </div>
+            <div id="menuFooter" class="pb-8 transition-all duration-500 translate-y-8 opacity-0">
+              <!-- Logo -->
+              <div class="flex justify-center mb-4">
+                <a href="#"><img src="data:image/png;base64,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" alt="Logo" /></a>
+              </div>
+
+              <!-- Social Media Icons -->
+                <div class="flex items-center justify-center gap-4">
+                    <a href="https://www.facebook.com/yourprofile" target="_blank">
+                        <svg width="24" height="25" viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#252424" d="M13.001 20.2867C16.9473 19.7946 20.001 16.4282 20.001 12.3486C20.001 7.93035 16.4193 4.34863 12.001 4.34863C7.5827 4.34863 4.00098 7.93035 4.00098 12.3486C4.00098 16.4282 7.05467 19.7946 11.001 20.2867V14.3486H9.00098V12.3486H11.001V10.6944C11.001 9.35718 11.1402 8.87225 11.4017 8.38336C11.6631 7.89447 12.0468 7.51079 12.5357 7.24933C12.9184 7.04467 13.3931 6.92115 14.2227 6.86817C14.5519 6.84714 14.9781 6.87396 15.501 6.94863V8.84863H15.001C14.0837 8.84863 13.7052 8.89195 13.4789 9.01296C13.3386 9.08802 13.2404 9.18621 13.1653 9.32656C13.0443 9.55281 13.001 9.77716 13.001 10.6944V12.3486H15.501L15.001 14.3486H13.001V20.2867ZM12.001 22.3486C6.47813 22.3486 2.00098 17.8714 2.00098 12.3486C2.00098 6.82578 6.47813 2.34863 12.001 2.34863C17.5238 2.34863 22.001 6.82578 22.001 12.3486C22.001 17.8714 17.5238 22.3486 12.001 22.3486Z" fill="#FDEFE7"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/yourprofile" target="_blank">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#252424" d="M12.001 9.34863C10.3436 9.34863 9.00098 10.6917 9.00098 12.3486C9.00098 14.0059 10.3441 15.3486 12.001 15.3486C13.6583 15.3486 15.001 14.0055 15.001 12.3486C15.001 10.6913 13.6579 9.34863 12.001 9.34863ZM12.001 7.34863C14.7614 7.34863 17.001 9.58573 17.001 12.3486C17.001 15.1091 14.7639 17.3486 12.001 17.3486C9.24051 17.3486 7.00098 15.1115 7.00098 12.3486C7.00098 9.58816 9.23808 7.34863 12.001 7.34863ZM18.501 7.09778C18.501 7.78789 17.9402 8.3478 17.251 8.3478C16.5609 8.3478 16.001 7.78703 16.001 7.09778C16.001 6.40853 16.5617 5.84863 17.251 5.84863C17.9393 5.84776 18.501 6.40853 18.501 7.09778ZM12.001 4.34863C9.5265 4.34863 9.12318 4.35518 7.97227 4.40643C7.18815 4.44324 6.66253 4.5487 6.17416 4.7383C5.74016 4.90662 5.42709 5.10761 5.09352 5.44118C4.75867 5.77603 4.55804 6.08826 4.3904 6.52246C4.20036 7.01195 4.09493 7.53674 4.05878 8.31978C4.00703 9.42383 4.00098 9.80968 4.00098 12.3486C4.00098 14.8231 4.00753 15.2264 4.05877 16.3772C4.0956 17.161 4.2012 17.6874 4.39034 18.1746C4.5591 18.6092 4.7605 18.923 5.09246 19.255C5.42863 19.5907 5.74179 19.792 6.17187 19.958C6.66619 20.1491 7.19148 20.2547 7.97212 20.2908C9.07618 20.3425 9.46203 20.3486 12.001 20.3486C14.4755 20.3486 14.8788 20.342 16.0296 20.2908C16.8117 20.2541 17.3385 20.1482 17.827 19.9592C18.2604 19.7909 18.5752 19.5888 18.9074 19.2571C19.2436 18.9204 19.4445 18.608 19.6107 18.1769C19.8013 17.6844 19.9071 17.1584 19.9432 16.3775C19.9949 15.2734 20.001 14.8875 20.001 12.3486C20.001 9.87415 19.9944 9.47084 19.9432 8.32C19.9064 7.53769 19.8005 7.01012 19.6113 6.52181C19.4434 6.08901 19.2417 5.77498 18.9084 5.44118C18.573 5.10578 18.2616 4.90556 17.8271 4.73805C17.338 4.54817 16.8124 4.44259 16.0298 4.40644C14.9258 4.35468 14.5399 4.34863 12.001 4.34863ZM12.001 2.34863C14.7176 2.34863 15.0568 2.35863 16.1235 2.40863C17.1876 2.4578 17.9135 2.62613 18.551 2.87363C19.2101 3.1278 19.7668 3.47113 20.3226 4.02696C20.8776 4.5828 21.221 5.14113 21.476 5.79863C21.7226 6.4353 21.891 7.16196 21.941 8.22613C21.9885 9.2928 22.001 9.63196 22.001 12.3486C22.001 15.0653 21.991 15.4044 21.941 16.4711C21.8918 17.5353 21.7226 18.2611 21.476 18.8986C21.2218 19.5578 20.8776 20.1144 20.3226 20.6703C19.7668 21.2253 19.2076 21.5686 18.551 21.8236C17.9135 22.0703 17.1876 22.2386 16.1235 22.2886C15.0568 22.3361 14.7176 22.3486 12.001 22.3486C9.28431 22.3486 8.94514 22.3386 7.87848 22.2886C6.81431 22.2394 6.08931 22.0703 5.45098 21.8236C4.79264 21.5694 4.23514 21.2253 3.67931 20.6703C3.12348 20.1144 2.78098 19.5553 2.52598 18.8986C2.27848 18.2611 2.11098 17.5353 2.06098 16.4711C2.01348 15.4044 2.00098 15.0653 2.00098 12.3486C2.00098 9.63196 2.01098 9.2928 2.06098 8.22613C2.11014 7.16113 2.27848 6.43613 2.52598 5.79863C2.78014 5.1403 3.12348 4.5828 3.67931 4.02696C4.23514 3.47113 4.79348 3.12863 5.45098 2.87363C6.08848 2.62613 6.81348 2.45863 7.87848 2.40863C8.94514 2.36113 9.28431 2.34863 12.001 2.34863Z" fill="#FDEFE7"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.tiktok.com/yourprofile" target="_blank">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#252424" d="M16 8.594V15.8486C16 19.4385 13.0899 22.3486 9.5 22.3486C5.91015 22.3486 3 19.4385 3 15.8486C3 12.2587 5.91015 9.34863 9.5 9.34863C10.0163 9.34863 10.5185 9.40882 11 9.52256V12.6854C10.5454 12.4694 10.0368 12.3486 9.5 12.3486C7.567 12.3486 6 13.9156 6 15.8486C6 17.7816 7.567 19.3486 9.5 19.3486C11.433 19.3486 13 17.7816 13 15.8486V2.34863H16C16 5.11005 18.2386 7.34863 21 7.34863V10.3486C19.1081 10.3486 17.3696 9.69191 16 8.594Z" fill="#FDEFE7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section id="about-us">
+        <div class="flex flex-col md:flex-row justify-between items-center px-0 md:px-10 pt-[25px] pb-7 md:pb-10">
+          <div
+            class="flex flex-col justify-center gap-4 w-full lg:w-2xl lg:-mr-28 lg:z-1"
+          >
+            <h1 class="text-3xl font-bold lg:text-6xl">Soul Beauty Lounge</h1>
+            <p class="text-2xl font-medium lg:text-3xl">
+              všetko pre vašu krásu na jednom mieste
+            </p>
+            <p class="font-normal text-lg md:w-3/4 lg:py-10">
+              Prémiový salón krásy v Bratislave, kde nájdete všetko — od
+              kozmetológie, masáží, manikúry, pedikúry, úpravy obočia,
+              kaderníckych služieb až po rôzne typy epilácie. Pohodlne,
+              profesionálne a s úsmevom. vašu krásu na jednom mieste.
+            </p>
+            <div class="flex flex-row items-center gap-4">
+              <a href="#" class="btn">Rezervácia online</a>
+              <a
+                href="#"
+                class="text-[#8D4323] py-3 px-3 md:px-6 rounded-3xl border-[#8D4323] border-solid border-2 text-xl"
+                ><b>Cenovka</b></a
+              >
+            </div>
+          </div>
+          <div>
+            <img
+              src="/assets/woman-main-DfQhYzAG.webp"
+              alt="Hero Image"
+              class="pt-4 lg:pt-0 lg:max-w-lg"
+            />
+          </div>
+        </div>
+      </section>
+      <section class=" lg:my-24">
+        <div
+          class="w-full mx-auto py-7 px-7 md:py-15 md:px-20 bg-secondary border-brown border-solid border-1 rounded-[60px] md:rounded-full flex flex-col justify-center items-center text-center"
+        >
+          <p class="font-medium text-base lg:text-3xl max-w-[850px]">
+            Šetrite čas, ušetrite energiu a užite si krásu a oddych pod jednou
+            strechou. Vitajte tam, kde sa starostlivosť stáva rituálom.
+          </p>
+          <a class="btn mt-2 md:mt-10" href="#">Rezervujte si svoj termín online</a>
+        </div>
+      </section>
+      <section>
+        <div
+          class="flex flex-col lg:flex-row items-center gap-10 px-0 md:px-4 pt-6 lg:px-20 lg:pt-0"
+        >
+          <div>
+            <img 
+              loading=«lazy»
+              src="/assets/woman-about-DYjsCHzg.webp"
+              alt="about"
+              class="lg:max-w-lg"
+            />
+          </div>
+          <div class="lg:w-1/2 space-y-3 text-justify lg:text-left lg:text-lg">
+            <h2
+              class="text-3xl xl:text-5xl font-bold text-center lg:text-left lg:mb-4"
+            >
+              Miesto, kde krása šetrí váš čas
+            </h2>
+            <p>
+              Každá žena si zaslúži krásu bez kompromisov — a časbez zbytočného
+              hľadania. V Soul Beauty Lounge veríme, že moderná žena žije v
+              rýchlom tempe a nemá priestor behať po rôznych kútoch Bratislavy,
+              aby našla všetko, čo potrebuje.
+            </p>
+            <p>
+              Preto sme vytvorili miesto, kde nájdete
+              <b
+                >kompletnú starostlivosť o krásu a relax pod jednou strechou
+                —</b
+              >
+              od kozmetológie, masáží, manikúry a pedikúry, úpravy obočia,
+              kaderníckych služieb až po voskovú, elektro a laserovú epiláciu.
+            </p>
+            <p>
+              Záleží nám aj na tom, aby ste sa u nás cítili výnimočne.
+              <b
+                >Dbáme na atmosféru, ktorá vám umožní vypnúť po náročnom dni.</b
+              >
+              Všetko pod taktovkou nášho <b>skúseného tímu odborníkov,</b> ktorí
+              svoju prácu milujú a robia ju s profesionálnym prístupom a
+              úsmevom.
+            </p>
+          </div>
+        </div>
+        <div>
+          <div
+          class="w-full lg:w-[65%] mx-auto py-7 px-10 md:py-10 md:px-15 lg:py-15 lg:px-20 bg-secondary border-brown border-solid border-1 rounded-[60px] md:rounded-full text-center my-7 lg:my-24"
+        >
+          <p class="font-medium text-lg lg:text-3xl max-w-[850px]">
+            U nás šetríte čas, oddychujete a odchádzate krajšia, sebavedomejšia a pripravená na nový deň.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div id="services" class="text-center pb-8 lg:pb-16 ">
+          <h3 class="text-3xl xl:text-5xl font-bold text-center pb-4">Všetko pre krásu — na jednom mieste</h3>
+          <p class="text-lg text-center  max-w-5xl mx-auto">Vyberte si z našej komplexnej ponuky služieb — všetko, čo vaša pleť, telo, vlasy a nechty potrebujú, nájdete u nás. Nemusíte nikam chodiť — všetko vyriešite u nás pohodlne a na jednom mieste.</p>
+        </div>
+       <!-- Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="flex flex-col items-center text-center">
+            <img loading=«lazy» src="/assets/woman-services-D_4a5cqv.png" alt="Image 1" class="w-full max-w-sm" />
+            <a href="#" class="mt-2 font-bold text-xl lg:text-3xl">Kozmetológia</a>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <img loading=«lazy» src="/assets/woman-services-D_4a5cqv.png" alt="Image 1" class="w-full max-w-sm" />
+            <a href="#" class="mt-2 font-bold text-xl lg:text-3xl">Masáže</a>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <img loading=«lazy» src="/assets/woman-services-D_4a5cqv.png" alt="Image 1" class="w-full max-w-sm" />
+            <a href="#" class="mt-2 font-bold text-xl lg:text-3xl">Manikúra & Pedikúra</a>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <img loading=«lazy» src="/assets/woman-services-D_4a5cqv.png" alt="Image 1" class="w-full max-w-sm" />
+            <a href="#" class="mt-2 font-bold text-xl lg:text-3xl">Úprava obočia</a>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <img loading=«lazy» src="/assets/woman-services-D_4a5cqv.png" alt="Image 1" class="w-full max-w-sm" />
+            <a href="#" class="mt-2 font-bold text-xl lg:text-3xl">Kadernícke služby</a>
+          </div>
+          <div class="flex flex-col items-center text-center">
+            <img loading=«lazy» src="/assets/woman-services-D_4a5cqv.png" alt="Image 1" class="w-full max-w-sm" />
+            <a href="#" class="mt-2 font-bold text-xl lg:text-3xl">Epilácia</a>
+          </div>
+        </div>
+      </section>
+      <!--------------------Kozmetológia ------------------->
+      <section id="cosmetology" class="mt-6 lg:mt-24">
+        <div class="flex flex-col items-center">
+         <div class="text-center" >
+           <h2 class="text-4xl lg:text-5xl font-bold mb-6">Kozmetológia</h2>
+           <div class="flex flex-col md:flex-row justify-center items-center gap-4 mb-10">
+           <p class="text-lg text-center lg:text-left max-w-2xl ">Čistenie pleti, hydratácia, mezoterapia, biorevitalizácia — zdravá, žiarivá pleť v rukách odborníkov a top značiek Dermaheal, DMK, Medik8.</p>
+           <a class="btn" href="#">Rezervácia</a>
+          </div>
+         
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mx-auto ">
+           <img loading=«lazy» src="/assets/cosmetology-1-BKRKaVZT.webp" alt="Obrazok 1" class="rounded-lg w-full h-auto" />
+           <img loading=«lazy» src="/assets/cosmetology-2-DA_6THPh.webp" alt="Obrazok 2" class="rounded-lg w-full h-auto" />
+           <img loading=«lazy» src="/assets/cosmetology-3-CmXI0zol.webp" alt="Obrazok 3" class="rounded-lg w-full h-auto" />
+          </div>
+       </div>
+      </section>
+      <!--------------------Masáže ------------------->
+      <section id="massage" class="mt-6 lg:mt-24">
+        <div class="flex flex-col items-center">
+         <div class="text-center" >
+           <h2 class="text-4xl lg:text-5xl font-bold mb-6">Masáže</h2>
+           <div class="flex flex-col md:flex-row justify-center items-center gap-4 mb-10">
+           <p class="text-lg text-center lg:text-left max-w-2xl ">Relaxačné a lymfatické masáže, ktoré uvoľnia telo a myseľ. Dokonalý reset po náročnom dni.</p>
+           <a class="btn" href="#">Rezervácia</a>
+          </div>
+         
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mx-auto ">
+           <img loading=«lazy» src="/assets/massage-1-BNgqEg6I.webp" alt="Obrazok 1" class="rounded-lg w-full h-auto" />
+           <img loading=«lazy» src="/assets/massage-2-bAVybKfh.webp" alt="Obrazok 2" class="rounded-lg w-full h-auto" />
+           <img loading=«lazy» src="/assets/massage-3--h_LwJFP.webp" alt="Obrazok 3" class="rounded-lg w-full h-auto" />
+          </div>
+       </div>
+      </section>
+      <!--------------------Manikúra & Pedikúra ------------------->
+      <section id="manicure" class="mt-6 lg:mt-24">
+        <div class="flex flex-col items-center">
+         <div class="text-center" >
+           <h2 class="text-4xl lg:text-5xl font-bold mb-6">Manikúra & Pedikúra</h2>
+           <div class="flex flex-col md:flex-row justify-center items-center gap-4 mb-10">
+           <p class="text-lg text-center lg:text-left max-w-2xl ">Perfektné nechty — klasická, gélová alebo spa manikúra a pedikúra s dôrazom na detail a hygienu.</p>
+           <a class="btn" href="#">Rezervácia</a>
+          </div>
+         
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mx-auto">
+           <img loading=«lazy» src="/assets/service-test-1-BmZ-xuqx.png" alt="Obrazok 1" class="rounded-lg w-full h-auto" />
+           <img loading=«lazy» src="/assets/service-test-2-CQejm8jI.png" alt="Obrazok 2" class="rounded-lg w-full h-auto" />
+           <img loading=«lazy» src="/assets/service-test-3-DhxsbtdP.png" alt="Obrazok 3" class="rounded-lg w-full h-auto" />
+          </div>
+       </div>
+      </section>
+      <!--------------------Úprava obočia ------------------->
+      <section id="eyebrows" class="mt-6 lg:mt-24">
+        <div class="flex flex-col items-center">
+         <div class="text-center" >
+           <h2 class="text-4xl lg:text-5xl font-bold mb-6">Úprava obočia</h2>
+           <div class="flex flex-col md:flex-row justify-center items-center gap-4 mb-10">
+           <p class="text-lg text-center lg:text-left max-w-2xl">Laminácia, tvarovanie a farbenie obočia — pre prirodzene krásny pohľad.</p>
+           <a class="btn" href="#">Rezervácia</a>
+          </div>
+         
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mx-auto">
+           <img loading=«lazy» src="/assets/service-test-1-BmZ-xuqx.png" alt="Obrazok 1" class="rounded-lg w-full h-auto" />
+           <img loading=«lazy» src="/assets/service-test-2-CQejm8jI.png" alt="Obrazok 2" class="rounded-lg w-full h-auto" />
+           <img loading=«lazy» src="/assets/service-test-3-DhxsbtdP.png" alt="Obrazok 3" class="rounded-lg w-full h-auto" />
+          </div>
+       </div>
+      </section>
+      <!--------------------Kadernícke služby ------------------->
+      <section id="hair" class="mt-6 lg:mt-24">
+        <div class="flex flex-col items-center">
+         <div class="text-center" >
+           <h2 class="text-4xl lg:text-5xl font-bold mb-6">Kadernícke služby</h2>
+           <div class="flex flex-col md:flex-row justify-center items-center gap-4 mb-10 ">
+           <p class="text-lg text-center lg:text-left max-w-2xl">Moderné strihy, styling, farbenie a regenerácia vlasov — všetko pod jednou strechou.</p>
+           <a class="btn" href="#">Rezervácia</a>
+          </div>
+         
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mx-auto">
+           <img loading=«lazy» src="/assets/service-test-1-BmZ-xuqx.png" alt="Obrazok 1" class="rounded-lg w-full h-auto" />
+           <img loading=«lazy» src="/assets/service-test-2-CQejm8jI.png" alt="Obrazok 2" class="rounded-lg w-full h-auto" />
+           <img loading=«lazy» src="/assets/service-test-3-DhxsbtdP.png" alt="Obrazok 3" class="rounded-lg w-full h-auto" />
+          </div>
+       </div>
+      </section>
+      <!--------------------Epilácia------------------->
+      <section id="epilation" class="mt-6 lg:mt-24">
+        <div class="flex flex-col items-center">
+          <div class="text-center">
+            <h2 class="text-4xl lg:text-5xl font-bold mb-6">Epilácia</h2>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4 mb-10">
+              <p class="text-lg text-center lg:text-left max-w-2xl">Hladká pokožka podľa vašich predstáv.</p>
+              <a class="btn" href="#">Rezervácia</a>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mx-auto text-center">
+              <div>
+                <img loading="lazy" src="/assets/epilation-1-DJVtQsQi.webp" alt="Obrazok 1" class="rounded-lg w-full h-auto mb-4" />
+                <h3 class="text-xl lg:text-3xl  font-bold mb-2">Voskova epilácia</h3>
+                <p class="text-sm lg:text-lg">rýchla a efektívna</p>
+              </div>
+              <div>
+                <img loading="lazy" src="/assets/epilation-2-ChJPr4Bu.webp" alt="Obrazok 2" class="rounded-lg w-full h-auto mb-4" />
+                <h3 class="text-xl lg:text-3xl font-bold mb-2">Elektrodepilácia</h3>
+                <p class="text-sm lg:text-lg">presná a trvalá</p>
+              </div>
+              <div>
+                <img loading="lazy" src="/assets/epilation-3-DjbmErBc.webp" alt="Obrazok 3" class="rounded-lg w-full h-auto mb-4" />
+                <h3 class="text-xl lg:text-3xl font-bold mb-2">Laserová epilácia</h3>
+                <p class="text-sm lg:text-lg">moderná a dlhotrvajúca</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-------------- Prečo si vybrať nás --------------->
+      <section id="why-choose-us" class="mt-6 lg:mt-24 md:pb-8 lg:pb-16">
+        <div class="text-center">
+          <h3 class="text-3xl xl:text-5xl font-bold text-center">Prečo si vybrať nás</h3>
+          <p class="text-lg max-w-[675px] mx-auto pb-6 md:pb-14 pt-6">Čistenie pleti, hydratácia, mezoterapia, biorevitalizácia — zdravá, žiarivá pleť v rukách odborníkov a top značiek Dermaheal, DMK, Medik8.</p>
+        </div>
+        <!-- Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:max-w-7xl mx-auto">
+          <div
+          class="w-full max-w-[410px] mx-auto p-8 md:p-16 bg-secondary border-brown border-solid border-1 rounded-full flex flex-col justify-center items-center text-center"
+        >
+          <p class="font-semibold lg:text-xl lg:w-2xs">
+            Všetko na jednom mieste — šetríte čas a energiu
+          </p>
+        </div>
+        <div class="w-full max-w-[410px] mx-auto p-8 md:p-16 bg-secondary border-brown border border-solid rounded-full flex flex-col justify-center items-center text-center">
+          <p class="font-semibold lg:text-xl lg:w-2xs">
+            Prémiová starostlivosť s top značkami
+          </p>
+        </div>
+        <div class="w-full max-w-[410px] mx-auto p-8 md:p-16 bg-secondary border-brown border border-solid rounded-full flex flex-col justify-center items-center text-center">
+          <p class="font-semibold lg:text-xl lg:w-2xs">
+            Skúsený a priateľský tím odborníkov
+          </p>
+        </div>
+        <div class="w-full max-w-[410px] mx-auto p-8 md:p-16 bg-secondary border-brown border border-solid rounded-full flex flex-col justify-center items-center text-center">
+          <p class="font-semibold lg:text-xl lg:w-2xs">
+            Oddychová atmosféra po náročnom dni
+          </p>
+        </div>
+        <div class="w-full max-w-[410px] mx-auto p-8 md:p-16 bg-secondary border-brown border border-solid rounded-full flex flex-col justify-center items-center text-center">
+          <p class="font-semibold lg:text-xl lg:w-2xs">
+            Diskrétnosť a individuálny prístup
+          </p>
+        </div>
+        <div class="w-full max-w-[410px] mx-auto p-8 md:p-16 bg-secondary border-brown border border-solid rounded-full flex flex-col justify-center items-center text-center">
+          <p class="font-semibold lg:text-xl lg:w-2xs">
+            Rýchla online rezervácia
+          </p>
+        </div>
+      </section>
+     </div>
+       <!-- Darujte krásu a oddych -->
+     <section id="card" class="w-full bg-gradient-to-r from-0% to-100% from-[#FDEFE7] to-[#9A520B] mt-6">
+         <div class="xl:container mx-auto px-4 md:py-2 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex flex-col justify-center items-center md:w-[80%] lg:w-4xl">
+              <h3 class="text-3xl md:text-4xl font-bold text-center pt-5 lg:pt-0">Darujte krásu a oddych</h3>
+              <p class="text-lg text-center mx-auto py-6">Potešte svojich blízkych darčekovou poukážkou na služby Soul Beauty Lounge. Krása a relax — darček, ktorý vždy poteší.</p>
+              <a class="btn" href="#">Objednávka certifikátu</a>
+            </div>
+            <div>
+              <img loading=«lazy» src="/assets/woman-whith-card-Dd3ntag2.webp" alt="card" class="pt-2.5 md:pt-0 md:-mb-2 lg:-mt-15">
+            </div>
+         </div>
+     </section>
+     <!-- Máte otázky? Napíšte nám -->
+     <section id="contact" class="bg-[#190202] border-b-2 border-solid border-[#8D432399]">
+         <div class="xl:container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="hidden md:block">
+              <img loading=«lazy» src="/assets/woman-form-MX1EV_FX.png" alt="form" class="max-w-full h-auto relative lg:top-0.5 z-1">
+            </div>
+            <!------------- form----------------->
+            <div class="w-full md:w-1/2 py-12 md:px-4 flex justify-center">
+              <form class="bg-main border border-[#F2A8A899] rounded-[40px] max-w-xl w-full p-8 shadow-md">
+                <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">
+                  Máte otázky? Napíšte nám
+                </h2>
+            
+                <div class="mb-4">
+                  <label class="block text-sm mb-1 pl-2.5" for="name">Meno</label>
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="e.g. Jane Doe"
+                    class="w-full px-4 py-3 border border-silver  rounded-full form-input-focus"
+                  />
+                </div>
+            
+                <div class="mb-4">
+                  <label class="block text-sm mb-1 pl-2.5" for="phone">Telefónne</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    placeholder="e.g. +123 456 788"
+                    class="w-full px-4 py-3 border border-silver  rounded-full form-input-focus"
+                  />
+                </div>
+            
+                <div class="mb-4">
+                  <label class="block text-sm mb-1 pl-2.5" for="email">E-mail</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="example@mail.com"
+                    class="w-full px-4 py-3 border border-silver  rounded-full form-input-focus"
+                  />
+                </div>
+            
+                <div class="mb-6">
+                  <label class="block text-sm mb-1 pl-2.5" for="message">Vaša správa</label>
+                  <textarea
+                    id="message"
+                    placeholder="Priestor na otázky"
+                    class="w-full px-4 py-3 border border-silver rounded-full form-input-focus"
+                  ></textarea>
+                </div>
+            
+                <div>
+                  <button
+                    type="submit"
+                    class=" btn w-full">
+                    Odoslať
+                  </button>
+                </div>
+              </form>
+            </div>
+         </div>
+     </section>
+    <!---------------- footer-------------- -->
+    <div class="w-full bg-[#190202] text-white">
+      <div class="xl:container mx-auto px-4">
+        <footer class="flex justify-between md:flex-wrap flex-col md:flex-row pt-5 md:pt-14">
+          <div class="flex justify-center items-center md:items-start">
+            <img loading=«lazy» src="/assets/logo-footer-DQEj-9Zz.png" alt="logo">
+          </div>
+          <div class="flex gap-2 flex-col">
+            <h3 class="md:font-normal font-bold text-base mb-2 md:mb-4">Pracovný plán</h3>
+            <div class="grid grid-cols-2 gap-x-8 gap-y-2">
+              <span>Pondelok</span> <span>9:00 – 21:00</span>
+              <span>Utorok</span> <span>9:00 – 21:00</span>
+              <span>Streda</span> <span>9:00 – 21:00</span>
+              <span>Štvrtok</span> <span>9:00 – 21:00</span>
+              <span>Piatok</span> <span>9:00 – 21:00</span>
+              <span>Sobota/Nedeľa</span> <span>*dohodou</span>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2 mt-4 md:mt-0">
+            <h3 class="md:font-normal font-bold text-base mb-2 md:mb-4">Domov</h3>
+            <a href="#about-us">O nás</a>
+            <a href="#why-choose-us">Prečo si vybrať nás</a>
+            <a href="#card">Darčekové poukážky</a>
+            <a href="#">Cenovka</a>
+            <a href="#contact">Kontakt</a>
+          </div>
+          <div class="flex flex-col gap-2 mt-4 md:mt-0">
+            <h3 class="md:font-normal font-bold text-base mb-2 md:mb-4">Naše služby</h3>
+            <a href="#cosmetology">Kozmetológia</a>
+            <a href="#massage">Masáže</a>
+            <a href="#manicure">Manikúra & Pedikúra</a>
+            <a href="#eyebrows">Úprava obočia</a>
+            <a href="#hair">Kadernícke služby</a>
+            <a href="#epilation">Epilácia</a>
+          </div>
+          <div class="flex flex-col gap-2 mt-4 md:mt-0">
+            <h3 class="md:font-normal font-bold text-base mb-2 md:mb-4">Sídlo</h3>
+            <a target="_blank" href="https://www.google.com/maps">Address Address Address</a>
+            <a href="tel:0910 22 55 55">0910 22 55 55</a>
+            <a href="mailto:info@expertbeauty.sk">info@expertbeauty.sk</a>
+            <div class="flex items-center gap-4">
+                <a href="https://www.facebook.com/yourprofile" target="_blank">
+                    <img src="data:image/svg+xml,%3csvg%20width='24'%20height='25'%20viewBox='0%200%2024%2025'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M13.001%2020.2867C16.9473%2019.7946%2020.001%2016.4282%2020.001%2012.3486C20.001%207.93035%2016.4193%204.34863%2012.001%204.34863C7.5827%204.34863%204.00098%207.93035%204.00098%2012.3486C4.00098%2016.4282%207.05467%2019.7946%2011.001%2020.2867V14.3486H9.00098V12.3486H11.001V10.6944C11.001%209.35718%2011.1402%208.87225%2011.4017%208.38336C11.6631%207.89447%2012.0468%207.51079%2012.5357%207.24933C12.9184%207.04467%2013.3931%206.92115%2014.2227%206.86817C14.5519%206.84714%2014.9781%206.87396%2015.501%206.94863V8.84863H15.001C14.0837%208.84863%2013.7052%208.89195%2013.4789%209.01296C13.3386%209.08802%2013.2404%209.18621%2013.1653%209.32656C13.0443%209.55281%2013.001%209.77716%2013.001%2010.6944V12.3486H15.501L15.001%2014.3486H13.001V20.2867ZM12.001%2022.3486C6.47813%2022.3486%202.00098%2017.8714%202.00098%2012.3486C2.00098%206.82578%206.47813%202.34863%2012.001%202.34863C17.5238%202.34863%2022.001%206.82578%2022.001%2012.3486C22.001%2017.8714%2017.5238%2022.3486%2012.001%2022.3486Z'%20fill='%23FDEFE7'/%3e%3c/svg%3e" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/yourprofile" target="_blank">
+                    <img src="data:image/svg+xml,%3csvg%20width='24'%20height='25'%20viewBox='0%200%2024%2025'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12.001%209.34863C10.3436%209.34863%209.00098%2010.6917%209.00098%2012.3486C9.00098%2014.0059%2010.3441%2015.3486%2012.001%2015.3486C13.6583%2015.3486%2015.001%2014.0055%2015.001%2012.3486C15.001%2010.6913%2013.6579%209.34863%2012.001%209.34863ZM12.001%207.34863C14.7614%207.34863%2017.001%209.58573%2017.001%2012.3486C17.001%2015.1091%2014.7639%2017.3486%2012.001%2017.3486C9.24051%2017.3486%207.00098%2015.1115%207.00098%2012.3486C7.00098%209.58816%209.23808%207.34863%2012.001%207.34863ZM18.501%207.09778C18.501%207.78789%2017.9402%208.3478%2017.251%208.3478C16.5609%208.3478%2016.001%207.78703%2016.001%207.09778C16.001%206.40853%2016.5617%205.84863%2017.251%205.84863C17.9393%205.84776%2018.501%206.40853%2018.501%207.09778ZM12.001%204.34863C9.5265%204.34863%209.12318%204.35518%207.97227%204.40643C7.18815%204.44324%206.66253%204.5487%206.17416%204.7383C5.74016%204.90662%205.42709%205.10761%205.09352%205.44118C4.75867%205.77603%204.55804%206.08826%204.3904%206.52246C4.20036%207.01195%204.09493%207.53674%204.05878%208.31978C4.00703%209.42383%204.00098%209.80968%204.00098%2012.3486C4.00098%2014.8231%204.00753%2015.2264%204.05877%2016.3772C4.0956%2017.161%204.2012%2017.6874%204.39034%2018.1746C4.5591%2018.6092%204.7605%2018.923%205.09246%2019.255C5.42863%2019.5907%205.74179%2019.792%206.17187%2019.958C6.66619%2020.1491%207.19148%2020.2547%207.97212%2020.2908C9.07618%2020.3425%209.46203%2020.3486%2012.001%2020.3486C14.4755%2020.3486%2014.8788%2020.342%2016.0296%2020.2908C16.8117%2020.2541%2017.3385%2020.1482%2017.827%2019.9592C18.2604%2019.7909%2018.5752%2019.5888%2018.9074%2019.2571C19.2436%2018.9204%2019.4445%2018.608%2019.6107%2018.1769C19.8013%2017.6844%2019.9071%2017.1584%2019.9432%2016.3775C19.9949%2015.2734%2020.001%2014.8875%2020.001%2012.3486C20.001%209.87415%2019.9944%209.47084%2019.9432%208.32C19.9064%207.53769%2019.8005%207.01012%2019.6113%206.52181C19.4434%206.08901%2019.2417%205.77498%2018.9084%205.44118C18.573%205.10578%2018.2616%204.90556%2017.8271%204.73805C17.338%204.54817%2016.8124%204.44259%2016.0298%204.40644C14.9258%204.35468%2014.5399%204.34863%2012.001%204.34863ZM12.001%202.34863C14.7176%202.34863%2015.0568%202.35863%2016.1235%202.40863C17.1876%202.4578%2017.9135%202.62613%2018.551%202.87363C19.2101%203.1278%2019.7668%203.47113%2020.3226%204.02696C20.8776%204.5828%2021.221%205.14113%2021.476%205.79863C21.7226%206.4353%2021.891%207.16196%2021.941%208.22613C21.9885%209.2928%2022.001%209.63196%2022.001%2012.3486C22.001%2015.0653%2021.991%2015.4044%2021.941%2016.4711C21.8918%2017.5353%2021.7226%2018.2611%2021.476%2018.8986C21.2218%2019.5578%2020.8776%2020.1144%2020.3226%2020.6703C19.7668%2021.2253%2019.2076%2021.5686%2018.551%2021.8236C17.9135%2022.0703%2017.1876%2022.2386%2016.1235%2022.2886C15.0568%2022.3361%2014.7176%2022.3486%2012.001%2022.3486C9.28431%2022.3486%208.94514%2022.3386%207.87848%2022.2886C6.81431%2022.2394%206.08931%2022.0703%205.45098%2021.8236C4.79264%2021.5694%204.23514%2021.2253%203.67931%2020.6703C3.12348%2020.1144%202.78098%2019.5553%202.52598%2018.8986C2.27848%2018.2611%202.11098%2017.5353%202.06098%2016.4711C2.01348%2015.4044%202.00098%2015.0653%202.00098%2012.3486C2.00098%209.63196%202.01098%209.2928%202.06098%208.22613C2.11014%207.16113%202.27848%206.43613%202.52598%205.79863C2.78014%205.1403%203.12348%204.5828%203.67931%204.02696C4.23514%203.47113%204.79348%203.12863%205.45098%202.87363C6.08848%202.62613%206.81348%202.45863%207.87848%202.40863C8.94514%202.36113%209.28431%202.34863%2012.001%202.34863Z'%20fill='%23FDEFE7'/%3e%3c/svg%3e" alt="Instagram">
+                </a>
+                <a href="https://www.tiktok.com/yourprofile" target="_blank">
+                    <img src="data:image/svg+xml,%3csvg%20width='24'%20height='25'%20viewBox='0%200%2024%2025'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M16%208.594V15.8486C16%2019.4385%2013.0899%2022.3486%209.5%2022.3486C5.91015%2022.3486%203%2019.4385%203%2015.8486C3%2012.2587%205.91015%209.34863%209.5%209.34863C10.0163%209.34863%2010.5185%209.40882%2011%209.52256V12.6854C10.5454%2012.4694%2010.0368%2012.3486%209.5%2012.3486C7.567%2012.3486%206%2013.9156%206%2015.8486C6%2017.7816%207.567%2019.3486%209.5%2019.3486C11.433%2019.3486%2013%2017.7816%2013%2015.8486V2.34863H16C16%205.11005%2018.2386%207.34863%2021%207.34863V10.3486C19.1081%2010.3486%2017.3696%209.69191%2016%208.594Z'%20fill='%23FDEFE7'/%3e%3c/svg%3e" alt="TikTok">
+                </a>
+            </div>
+          </div>
+        </footer>
+        <div class="flex justify-center mt-6">
+            <div class="w-full h-0.5 from-0% to-100% bg-gradient-to-r from-[#8D432323] to-[#8D432366] rounded-4xl"></div>
+        </div>
+        <div class="p-6 pr-0">
+            <p class="md:text-right text-center text-base font-normal">
+                © Copyright - Soul Beauty Lounge <span class="current-year"></span>
+            </p>
+        </div>
+      </div>
+    </div>
+    <div id="scrollToTop" class="fixed bottom-6 right-4 z-50 bg-gradient-to-r from-0% to-100% from-[#E48930] to-[#B36110] rounded-full p-2 cursor-pointer hidden">
+       <svg enable-background="new 0 0 32 32" id="Layer_1" version="1.1" viewBox="0 0 32 32" width="20px" height="20px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path d="M18.221,7.206l9.585,9.585c0.879,0.879,0.879,2.317,0,3.195l-0.8,0.801c-0.877,0.878-2.316,0.878-3.194,0
+                l-7.315-7.315l-7.315,7.315c-0.878,0.878-2.317,0.878-3.194,0l-0.8-0.801c-0.879-0.878-0.879-2.316,0-3.195l9.587-9.585 
+                c0.471-0.472,1.103-0.682,1.723-0.647C17.115,6.524,17.748,6.734,18.221,7.206z" fill="#fff"
+            />
+        </svg>
+    </div>
+    
+   <script>
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+        const mobileMenuPanel = document.getElementById('mobileMenuPanel');
+        const mobileMenuBackdrop = document.getElementById('mobileMenuBackdrop');
+        const menuLinks = document.querySelectorAll('.menu-link');
+        const menuButtons = document.getElementById('menuButtons');
+        const menuFooter = document.getElementById('menuFooter');
+        const scrollToTopButton = document.getElementById('scrollToTop');
+        const scrollToTop = () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+        scrollToTopButton.addEventListener('click', scrollToTop);
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                scrollToTopButton.classList.remove('hidden');
+            } else {
+                scrollToTopButton.classList.add('hidden');
+            }
+        });
+        
+        const line1 = document.getElementById('line1');
+        const line2 = document.getElementById('line2');
+        const line3 = document.getElementById('line3');
+        
+        let isMenuOpen = false;
+
+        function openMobileMenu() {
+            isMenuOpen = true;
+            
+            document.body.style.overflow = 'hidden';
+            
+            mobileMenuOverlay.classList.remove('opacity-0', 'invisible');
+            mobileMenuOverlay.classList.add('opacity-100', 'visible');
+            
+            mobileMenuBackdrop.classList.remove('bg-opacity-0');
+            mobileMenuBackdrop.classList.add('bg-opacity-50', 'backdrop-blur-sm');
+            
+            mobileMenuPanel.classList.remove('translate-x-full');
+            mobileMenuPanel.classList.add('translate-x-0');
+            
+            line1.classList.add('rotate-45', 'translate-y-1.5');
+            line2.classList.add('opacity-0');
+            line3.classList.add('-rotate-45', '-translate-y-1.5');
+            
+            setTimeout(() => {
+                menuLinks.forEach((link, index) => {
+                    setTimeout(() => {
+                        link.classList.remove('translate-y-4', 'opacity-0');
+                        link.classList.add('translate-y-0', 'opacity-100');
+                    }, index * 100);
+                });
+                
+                setTimeout(() => {
+                    menuButtons.classList.remove('translate-y-8', 'opacity-0');
+                    menuButtons.classList.add('translate-y-0', 'opacity-100');
+                }, 600);
+                
+                setTimeout(() => {
+                    menuFooter.classList.remove('translate-y-8', 'opacity-0');
+                    menuFooter.classList.add('translate-y-0', 'opacity-100');
+                }, 700);
+            }, 100);
+        }
+
+        function closeMobileMenu() {
+            isMenuOpen = false;
+            
+            document.body.style.overflow = 'unset';
+            
+            mobileMenuOverlay.classList.remove('opacity-100', 'visible');
+            mobileMenuOverlay.classList.add('opacity-0', 'invisible');
+            
+            mobileMenuBackdrop.classList.remove('bg-opacity-50', 'backdrop-blur-sm');
+            mobileMenuBackdrop.classList.add('bg-opacity-0');
+            
+            mobileMenuPanel.classList.remove('translate-x-0');
+            mobileMenuPanel.classList.add('translate-x-full');
+            
+            line1.classList.remove('rotate-45', 'translate-y-1.5');
+            line2.classList.remove('opacity-0');
+            line3.classList.remove('-rotate-45', '-translate-y-1.5');
+            
+            menuLinks.forEach(link => {
+                link.classList.remove('translate-y-0', 'opacity-100');
+                link.classList.add('translate-y-4', 'opacity-0');
+            });
+            
+            menuButtons.classList.remove('translate-y-0', 'opacity-100');
+            menuButtons.classList.add('translate-y-8', 'opacity-0');
+            
+            menuFooter.classList.remove('translate-y-0', 'opacity-100');
+            menuFooter.classList.add('translate-y-8', 'opacity-0');
+        }
+
+        mobileMenuToggle.addEventListener('click', () => {
+            if (isMenuOpen) {
+                closeMobileMenu();
+            } else {
+                openMobileMenu();
+            }
+        });
+        mobileMenuBackdrop.addEventListener('click', closeMobileMenu);
+
+        menuLinks.forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            if(anchor) {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            }
+        });
+
+        // Update the current year in the footer
+        const currentYear = new Date().getFullYear();
+        document.querySelector('.current-year').textContent = currentYear;
+    </script>
+  </body>
+</html>
+
+
+
+
