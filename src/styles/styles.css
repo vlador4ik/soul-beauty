@@ -1,19 +1,19 @@
 @import "tailwindcss";
 @theme {
-  --color-main: #fdefe7;
+  --color-main: #f7f6f4;
   --color-primary: #9a520b;
   --color-black: #252424;
   --color-white: #f4f4f4;
-  --color-secondary: #fbe0d233;
-  --color-brown: #82393933;
+  --color-secondary: #f3e5d733;
+  --color-brown: #d7c4b1cc;
   --color-silver: #aaaaaa;
   --font-display: "Montserrat", "sans-serif";
 }
 
 /* TODO: need to refactor */
 .btn {
-  @apply text-white py-3 lg:px-6 px-3 rounded-3xl border-[#B36110] border-solid border-1 lg:text-xl text-base;
-  @apply bg-gradient-to-r from-0% to-100% from-[#E48930] to-[#B36110];
+  @apply text-white py-3 lg:px-6 px-3 rounded-3xl border-[#8D432323] border-solid border-1 lg:text-xl text-base;
+  @apply bg-gradient-to-r from-0% to-100% from-[#F3E5D7] to-[#D7C4B1] text-black font-medium;
 }
 .menu-opened nav ul {
   @apply flex flex-col items-center gap-4 absolute top-30 left-0 w-full bg-secondary z-50 text-left;
