@@ -12,7 +12,7 @@
 
 /* TODO: need to refactor */
 .btn {
-  @apply text-white py-3 lg:px-6 px-3 rounded-3xl border-[#8D432323] border-solid border-1 lg:text-xl text-base;
+  @apply text-white p-3 lg:px-6 rounded-3xl border-[#8D432323] border-solid border-1 lg:text-xl text-base;
   @apply bg-gradient-to-r from-0% to-100% from-[#F3E5D7] to-[#D7C4B1] text-black font-medium;
 }
 .menu-opened nav ul {
