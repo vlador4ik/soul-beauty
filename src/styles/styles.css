@@ -24,3 +24,6 @@
 .form-input-focus {
   @apply focus:outline-none focus:ring-2 focus:ring-orange-300;
 }
+.works-pagination .swiper-pagination-bullet-active {
+  background-color: #d7c4b1;
+}

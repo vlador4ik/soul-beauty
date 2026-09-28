@@ -6,7 +6,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 // init Swiper:
-const swiper = new Swiper(".reviews-swiper", {
+const reviews = new Swiper(".reviews-swiper", {
   // configure Swiper to use modules
   modules: [Navigation, Pagination],
   navigation: {
@@ -14,10 +14,19 @@ const swiper = new Swiper(".reviews-swiper", {
     nextEl: ".reviews-next-button",
     prevEl: ".reviews-prev-button",
   },
-  //   pagination: {
-  //     el: ".reviews-pagination",
-  //     dynamicBullets: true,
-  //     dynamicMainBullets: 3,
-  //   },
+  loop: true,
+});
+const works = new Swiper(".works-swiper", {
+  // configure Swiper to use modules
+  modules: [Navigation, Pagination],
+  navigation: {
+    nextEl: ".works-next-button",
+    prevEl: ".works-prev-button",
+  },
+  pagination: {
+    el: ".works-pagination",
+    dynamicBullets: true,
+    dynamicMainBullets: 1,
+  },
   loop: true,
 });
