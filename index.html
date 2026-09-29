@@ -1,13 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sk">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
+  <link rel="shortcut icon" href="src/images/favicon.ico" type="image/x-icon">
   <link href="./src/styles/styles.css" rel="stylesheet" />
-  <title>Soul Beauty</title>
+  <title>Soul Beauty | Kozmetický salón v Bratislava</title>
+  <meta name="description" content="Soul Beauty - kozmetický salón v meste
+    Bratislava. Objavte naše kozmetické služby
+    a rezervujte si svoj termín." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="sk_SK" />
+  <meta property="og:title" content="Soul Beauty | Kozmetický salón" />
+  <meta property="og:description" content="Objavte kozmetické služby Soul Beauty." />
+  <meta property="og:url" content="https://soulbeauty.sk/" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": "Soul Beauty",
+  "url": "https://soulbeauty.sk/",
+  "image": "https://soulbeauty.sk/src/images/logo.png",
+  "telephone": "+421XXXXXXXXX",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Tomášikova 50E",
+    "addressLocality": "Bratislava",
+    "postalCode": "82101",
+    "addressCountry": "SK"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "19:00"
+    }
+  ]
+}
+</script>
 </head>
 
 <body class="bg-main font-display">
@@ -35,7 +76,7 @@
       </button>
 
       <div class="contact-btn hidden md:block">
-        <a class="btn" href="https://n1372716.alteg.io/">Rezervácia</a>
+        <a class="btn" href="https://n1460028.alteg.io/">Rezervácia</a>
       </div>
     </header>
     <div id="mobileMenuOverlay"
@@ -81,10 +122,10 @@
             </ul>
           </nav>
           <div id="menuButtons" class="space-y-4 transition-all duration-500 translate-y-8 opacity-0">
-            <a href="https://n1372716.alteg.io/" class="btn w-full block text-center">
+            <a href="https://n1460028.alteg.io/" class="btn w-full block text-center">
               Rezervácia
             </a>
-            <a href="https://n1372716.alteg.io/"
+            <a href="https://n1460028.alteg.io/"
               class="w-full block text-[#8D4323] py-3 px-3 md:px-6 rounded-3xl border-[#8D4323] border-solid border-2 text-xl text-center">
               Cenník
             </a>
@@ -132,8 +173,8 @@
             Kozmetika, vlasy, nechty, masáže či epilácia. Vyberte si, na čo máte práve chuť — o zvyšok sa postaráme.
           </p>
           <div class="flex flex-row items-center gap-4">
-            <a href="https://n1372716.alteg.io/" class="btn">Rezervovať online</a>
-            <a href="https://n1372716.alteg.io/"
+            <a href="https://n1460028.alteg.io/" class="btn">Rezervovať online</a>
+            <a href="https://n1460028.alteg.io/"
               class="font-medium text-black py-3 px-3 lg:py-3 lg:px-6 md:px-6 rounded-full border-[#D7C4B1CC] border-solid border-2 lg:text-xl text-base">Cenník</a>
           </div>
         </div>
@@ -149,15 +190,14 @@
           <span class="font-semibold">Nemusíte behať po celom meste.</span>
           To, čo bežne riešite na niekoľkých miestach, nájdete u nás pod jednou strechou.
         </p>
-        <a class="btn mt-2 md:mt-10" href="https://n1372716.alteg.io/">Rezervujte si svoj termín online</a>
+        <a class="btn mt-2 md:mt-10" href="https://n1460028.alteg.io/">Rezervujte si svoj termín online</a>
       </div>
     </section>
     <section>
       <div
         class="flex flex-row max-md:flex-wrap-reverse max-md:justify-center items-center gap-16 px-0 md:px-4 pt-6 lg:px-20 lg:pt-0">
         <div>
-          <img loading="lazy" src="src/images/woman-about.webp" alt="about"
-            class="max-w-sm max-md:max-w-xs rounded-[80px]" />
+          <video src="src/images/intro.MP4" autoplay muted class="max-w-sm max-md:max-w-xs rounded-[80px]"></video>
         </div>
         <div class="space-y-3 text-justify lg:text-left lg:text-lg">
           <h2 class="text-3xl xl:text-5xl font-bold text-center lg:text-left lg:mb-12">
@@ -188,7 +228,7 @@
     </section>
     <section>
       <div id="services" class="text-center pb-8 lg:pb-16 ">
-        <h3 class="text-3xl xl:text-5xl font-bold text-center pb-4">Všetko pre krásu — na jednom mieste</h3>
+        <h2 class="text-3xl xl:text-5xl font-bold text-center pb-4">Všetko pre krásu — na jednom mieste</h2>
         <p class="text-lg text-center  max-w-5xl mx-auto">Vyberte si z našej komplexnej ponuky služieb — všetko, čo vaša
           pleť, telo, vlasy a nechty potrebujú, nájdete u nás. Nemusíte nikam chodiť — všetko vyriešite u nás pohodlne a
           na jednom mieste.</p>
@@ -198,47 +238,47 @@
         <div class="flex flex-col items-center text-center">
           <img loading="lazy" src="src/images/services/service-1.webp" alt="Kozmetológia"
             class="w-full max-w-xs rounded-t-[150px]" />
-          <span class="mt-6 font-bold text-xl lg:text-3xl">Kozmetológia</span>
+          <h3 class="mt-6 font-bold text-xl lg:text-3xl">Kozmetológia</h3>
         </div>
         <div class="flex flex-col items-center text-center">
           <img loading="lazy" src="src/images/services/service-2.webp" alt="Masáže"
             class="w-full max-w-xs rounded-t-[150px]" />
-          <span class="mt-2 font-bold text-xl lg:text-3xl">Masáže</span>
+          <h3 class="mt-2 font-bold text-xl lg:text-3xl">Masáže</h3>
         </div>
         <div class="flex flex-col items-center text-center">
           <img loading="lazy" src="src/images/services/service-3.webp" alt="Manikúra & Pedikúra"
             class="w-full max-w-xs rounded-t-[150px]" />
-          <span class="mt-2 font-bold text-xl lg:text-3xl">Manikúra & Pedikúra</span>
+          <h3 class="mt-2 font-bold text-xl lg:text-3xl">Manikúra & Pedikúra</h3>
         </div>
         <div class="flex flex-col items-center text-center">
           <img loading="lazy" src="src/images/services/service-4.webp" alt="Úprava obočia"
             class="w-full max-w-xs rounded-t-[150px]" />
-          <span class="mt-2 font-bold text-xl lg:text-3xl">Úprava obočia</span>
+          <h3 class="mt-2 font-bold text-xl lg:text-3xl">Úprava obočia</h3>
         </div>
         <div class="flex flex-col items-center text-center">
           <img loading="lazy" src="src/images/services/service-5.webp" alt="Kadernícke služby"
             class="w-full max-w-xs rounded-t-[150px]" />
-          <span class="mt-2 font-bold text-xl lg:text-3xl">Kadernícke služby</span>
+          <h3 class="mt-2 font-bold text-xl lg:text-3xl">Kadernícke služby</h3>
         </div>
         <div class="flex flex-col items-center text-center">
           <img loading="lazy" src="src/images/services/service-6.webp" alt="Ličenie"
             class="w-full max-w-xs rounded-t-[150px]" />
-          <span class="mt-2 font-bold text-xl lg:text-3xl">Ličenie</span>
+          <h3 class="mt-2 font-bold text-xl lg:text-3xl">Ličenie</h3>
         </div>
         <div class="flex flex-col items-center text-center">
           <img loading="lazy" src="src/images/services/service-7.webp" alt="Laserová epilacia"
             class="w-full max-w-xs rounded-t-[150px]" />
-          <span class="mt-2 font-bold text-xl lg:text-3xl">Laserová epilacia</span>
+          <h3 class="mt-2 font-bold text-xl lg:text-3xl">Laserová epilacia</h3>
         </div>
         <div class="flex flex-col items-center text-center">
           <img loading="lazy" src="src/images/services/service-8.webp" alt="Vosková depilácia"
             class="w-full max-w-xs rounded-t-[150px]" />
-          <span class="mt-2 font-bold text-xl lg:text-3xl">Vosková depilácia</span>
+          <h3 class="mt-2 font-bold text-xl lg:text-3xl">Vosková depilácia</h3>
         </div>
         <div class="flex flex-col items-center text-center">
           <img loading="lazy" src="src/images/services/service-9.webp" alt="Elektroepilácia"
             class="w-full max-w-xs rounded-t-[150px]" />
-          <span class="mt-2 font-bold text-xl lg:text-3xl">Elektroepilácia</span>
+          <h3 class="mt-2 font-bold text-xl lg:text-3xl">Elektroepilácia</h3>
         </div>
       </div>
     </section>
@@ -382,13 +422,13 @@
       <div class="flex justify-center ml-15">
         <div class="works-pagination mt-5"></div>
       </div>
-      <div class="text-center mt-15"><a href="https://n1372716.alteg.io/" class="btn">Rezervácia</a></div>
+      <div class="text-center mt-15"><a href="https://n1460028.alteg.io/" class="btn">Rezervácia</a></div>
     </section>
 
     <!-------------- Prečo si vybrať nás --------------->
     <section id="why-choose-us" class="mt-6 lg:mt-24 md:pb-8 lg:pb-16">
       <div class="text-center">
-        <h3 class="text-3xl xl:text-5xl font-bold text-center">Prečo si vybrať nás</h3>
+        <h2 class="text-3xl xl:text-5xl font-bold text-center">Prečo si vybrať nás</h2>
         <p class="text-lg max-w-[675px] mx-auto pb-6 md:pb-14 pt-6">Čistenie pleti, hydratácia, mezoterapia,
           biorevitalizácia — zdravá, žiarivá pleť v rukách odborníkov a top značiek Dermaheal, DMK, Medik8.</p>
       </div>
@@ -436,10 +476,10 @@
   <section id="card" class="w-full bg-gradient-to-r from-0% to-100% from-[#FEFEFE] to-[#D4D2D3] mt-6">
     <div class="xl:container mx-auto px-4 md:py-2 flex flex-col md:flex-row justify-between items-center">
       <div class="flex flex-col justify-center items-center md:w-[80%] lg:w-4xl">
-        <h3 class="text-3xl md:text-5xl font-bold text-center pt-5 lg:pt-0">Darujte krásu a oddych</h3>
+        <h2 class="text-3xl md:text-5xl font-bold text-center pt-5 lg:pt-0">Darujte krásu a oddych</h2>
         <p class="text-lg text-center mx-auto py-6">Potešte svojich blízkych darčekovou poukážkou na služby Soul Beauty
           Lounge. Krása a relax — darček, ktorý vždy poteší.</p>
-        <a class="btn" href="https://n1372716.alteg.io/">Objednávka certifikátu</a>
+        <a class="btn" href="https://n1460028.alteg.io/">Objednávka certifikátu</a>
       </div>
       <div>
         <img loading="lazy" src="src/images/woman-whith-card.webp" alt="card" class="pt-2.5 md:pt-0 md:-mb-2 lg:-mt-15">
@@ -449,7 +489,7 @@
 
   <section id="testimonials" class="py-25 max-lg:py-10">
     <div class="text-center">
-      <h3 class="text-3xl xl:text-5xl font-bold text-center">Čo o nás hovoria naši klienti?</h3>
+      <h2 class="text-3xl xl:text-5xl font-bold text-center">Čo o nás hovoria naši klienti?</h2>
     </div>
     <div class="xl:container px-4 mx-auto">
       <div class="reviews-swiper swiper mt-14">
@@ -651,18 +691,18 @@
           <a href="#about-us">O nás</a>
           <a href="#why-choose-us">Prečo si vybrať nás</a>
           <a href="#card">Darčekové poukážky</a>
-          <a href="https://n1372716.alteg.io/">Cenovka</a>
+          <a href="https://n1460028.alteg.io/">Cenovka</a>
           <a href="#contact">Kontakt</a>
         </div>
         <div class="flex flex-col gap-2 mt-4 md:mt-0">
           <h3 class="font-semibold text-base mb-2 md:mb-4">Naše služby</h3>
           <a href="#cosmetology">Kozmetika</a>
-          <a href="#massage">Masáže</a>
-          <a href="#manicure">Manikúra a pedikúra</a>
-          <a href="#eyebrows">Úprava obočia</a>
-          <a href="#hair">Kadernícke služby</a>
-          <a href="#epilation">Epilácia</a>
-          <a href="#epilation">Líčenie</a>
+          <a href="#cosmetology">Masáže</a>
+          <a href="#cosmetology">Manikúra a pedikúra</a>
+          <a href="#cosmetology">Úprava obočia</a>
+          <a href="#cosmetology">Kadernícke služby</a>
+          <a href="#cosmetology">Epilácia</a>
+          <a href="#cosmetology">Líčenie</a>
         </div>
         <div class="flex flex-col gap-2 mt-4 md:mt-0">
           <h3 class="font-semibold text-base mb-2 md:mb-4">Adresa prevádzky</h3>
